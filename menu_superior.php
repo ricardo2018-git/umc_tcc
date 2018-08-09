@@ -34,7 +34,7 @@
 	       			<!-- RGM e sua img -->
 		       			<div class="input-group">
 		       				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-	    					<input id="id_rgm" type="text" class="form-control" name="rgm" placeholder="Rgm">
+	    					<input id="id_rgm" type="text" class="form-control" name="rgm" placeholder="RGM">
 		       			</div>
 	       			<!-- FIM RGM e sua img -->
 	       				<br/>
