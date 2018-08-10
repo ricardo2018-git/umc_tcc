@@ -1,0 +1,4 @@
+modal lodar
+	esqueci minha senha
+	fazer o menu x dos modais para celular
+	validações dos modais da tela de login
