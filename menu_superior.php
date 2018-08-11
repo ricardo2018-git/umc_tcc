@@ -83,48 +83,66 @@
 			      <div class="modal-content">
 			        <div class="modal-header">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h4 class="modal-title">Cadastro</h4>
+			          <h4 class="modal-title">Formulario de cadastro</h4>
 			        </div>
 			        <div class="modal-body">
 			        	<form>
-			        		<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
-								<input placeholder="Nome" type="text" class="form-control" id="for_nome" required />
-							</div>
-
-							<div class="input-group">
+		        		
+		        			<div class="col-sm-8">
+		        				<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
+									<input placeholder="Nome" type="text" class="form-control" id="for_nome" required />
+								</div>
+		        			</div>
+			        		
+							<div class="col-sm4 input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 								<input placeholder="CPF" type="text" class="form-control" id="for_cpf" maxlength="11" required />
 							</div>
-
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-								<input placeholder="email@exemplo.com.br" type="email" class="form-control" id="for_email" required />
-							</div>						
-								
-							<div class="input-group">
+						
+							<div class="col-sm-8">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+									<input placeholder="email@exemplo.com.br" type="email" class="form-control" id="for_email" required />
+								</div>		
+							</div>
+						
+							<div class="col-sm4 input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
 								<input placeholder="RGM" type="text" class="form-control" id="for_rgm" maxlength="11" required />
 							</div>					
 							
-							<div class="input-group">
+							<div class="col-sm-6">
+								<div class="col-sm4 input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+									<input placeholder="Senha" type="password" class="form-control" id="for_senha" maxlength="6" required />
+								</div>	
+							</div>
+
+							<div class="col-sm-6 input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input placeholder="Senha" type="password" class="form-control" id="for_senha" maxlength="6" required />
-							</div>								
-							
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-								<input placeholder="Endereço" type="text" class="form-control" id="for_endereco" />
+								<input placeholder="Confirma Senha" type="password" class="form-control" id="for_senha" maxlength="6" required />
+							</div>							
+						
+							<div class="col-sm-9">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+									<input placeholder="Endereço" type="text" class="form-control" id="for_endereco" />
+								</div>
 							</div>
-							
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-pushpin"></i></span>
-								<input placeholder="Complemento" type="text" class="form-control" id="for_complemento" />
+
+							<div class="">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+									<input placeholder="Cep" type="text" class="form-control" id="for_complemento" />
+								</div>
 							</div>
-													
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-								<input placeholder="Cep" type="text" class="form-control" id="for_cep" />
+
+							<div class="col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-pushpin"></i></span>
+									<input placeholder="Complemento" type="text" class="form-control" id="for_cep" />
+								</div>
 							</div>
 							
 							<div class="input-group">
@@ -132,33 +150,38 @@
 								<input placeholder="Cidade" type="text" class="form-control" id="for_cidade" />
 							</div>
 							
-							<div class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-								<input placeholder="Estado" type="text" class="form-control" id="for_estado" />
+							<div class="col-sm-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+									<input placeholder="Estado" type="text" class="form-control" id="for_estado" />
+								</div>
 							</div>
 							
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
 								<input placeholder="Telefone" type="tel" class="form-control" id="for_telefone" />
 							</div>
-												
-							<div class="radio">
-								<label for="for_sexo">Sexo: </label>
-								<label class="radio-inline"><input type="radio" name="sexo" value="f">Feminino</label>						
-								<label class="radio-inline"><input type="radio" name="sexo" value="m">Masculino</label>
-								<label class="radio-inline"><input type="radio" name="sexo" value="o">Outro(as)</label>
-							</div>
-								<br/>
-							<div class="radio">
-								<label for="for_nacionalidade">Nacionalidade</label>
-								<label class="radio-inline"><input type="radio" name="nasc" value="b">Brasileiro(a)</label>					
-								<label class="radio-inline"><input type="radio" name="nasc" value="e">Estrangeiro</label>
-							</div>
 							
+							<div>				
+								<div id="radio" class="radio panel panel-default">
+									<label for="for_sexo">Sexo: </label><br />
+									<label class="radio-inline"><input type="radio" name="sexo" value="f">Feminino</label>						
+									<label class="radio-inline"><input type="radio" name="sexo" value="m">Masculino</label>
+									<label class="radio-inline"><input type="radio" name="sexo" value="o">Outro(as)</label>
+										<br /><br />
+									<label for="for_nacionalidade">Nacionalidade</label><br />
+									<label class="radio-inline"><input type="radio" name="nasc" value="b">Brasileiro(a)</label>			
+									<label class="radio-inline"><input type="radio" name="nasc" value="e">Estrangeiro(a)</label>
+								</div>
+							
+								<div id="img_facul">
+									<img src="img/faculdade.jpg" class="img-circle" alt="Cinque Terre" height="100">
+								</div>
+							</div>
 			        	</form>
 			        </div>
 			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" >Cadastrar</button>
+			          <button type="button" class="btn btn-success"" >Cadastrar</button>
 			          <button type="button" class="btn btn-default" data-dismiss="modal">Limpar</button>
 			        </div>
 			      </div>
