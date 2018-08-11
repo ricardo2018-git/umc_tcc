@@ -10,7 +10,7 @@ CREATE TABLE usuarios(
 	rgm_usu			varchar(12) not null,						/*Não pode ser nulo*/
 	nome_usu 		varchar(50) not null,						/*Não pode ser nulo*/
 	email_usu   	varchar(100) not null,						/*Não pode ser nulo*/
-	senha_usu   	varchar(32) not null						/*Não pode ser nulo*/
+	senha_usu   	varchar(32) not null,						/*Não pode ser nulo*/
 	foto_usu		/*descobrir*/
 	data_cad_usu	datetime default current_timestamp			/*Inseri data e hora automatico*/
 );
