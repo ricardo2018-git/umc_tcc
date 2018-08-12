@@ -8,16 +8,16 @@
 		.mySlides {display: none;}
 		img {vertical-align: middle;}
 
-		/* Slideshow container */
+		/* Onde vai ser apresentado */
 		.slideshow-container {
 		  max-width: 500px;
 		  position: relative;
 		  margin: auto;
 		}
 
-		/* Caption text */
+		/* Legenda */
 		.text {
-		  color: #f2f2f2;
+		  color: Black;
 		  font-size: 15px;
 		  padding: 8px 12px;
 		  position: absolute;
@@ -26,7 +26,7 @@
 		  text-align: center;
 		}
 
-		/* Number text (1/3 etc) */
+		/* Numeração (1/3 etc) */
 		.numbertext {
 		  color: #f2f2f2;
 		  font-size: 12px;
@@ -35,7 +35,7 @@
 		  top: 0;
 		}
 
-		/* The dots/bullets/indicators */
+		/* pontos/marcadores */
 		.dot {
 		  height: 15px;
 		  width: 15px;
@@ -50,7 +50,7 @@
 		  background-color: #717171;
 		}
 
-		/* Fading animation */
+		/* animação */
 		.fade {
 		  -webkit-animation-name: fade;
 		  -webkit-animation-duration: 1.5s;
@@ -68,7 +68,7 @@
 		  to {opacity: 1}
 		}
 
-		/* On smaller screens, decrease text size */
+		/* ajusta o tamanho das letra em tela menor */
 		@media only screen and (max-width: 300px) {
 		  .text {font-size: 11px}
 		}
@@ -77,75 +77,70 @@
 
 	<body>
 
-	<center><h2>UMC Presente com futuros profisionais de Anatomia</h2></center><br/>
+	<center><h2>UMC Presente na Anatomia Humana</h2></center><br/>
 
 	<div class="slideshow-container">
 
 	<div class="mySlides fade">
-	  <div class="numbertext">1 / 10</div>
+	  <div class="numbertext">01 / 09</div>
 	  <img src="img/apresentacao/01.jpg" style="width:100%">
-	  <div class="text">texto do slide 1</div>
+	  <div class="text"><h3>UMC anatomia</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">2 / 10</div>
+	  <div class="numbertext">02 / 09</div>
 	  <img src="img/apresentacao/02.jpg" style="width:100%">
-	  <div class="text">texto do slide 2</div>
+	  <div class="text"><h3>Equilibrio com estudos</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">3 / 10</div>
+	  <div class="numbertext">03 / 09</div>
 	  <img src="img/apresentacao/03.jpg" style="width:100%">
-	  <div class="text">texto do slide 3</div>
+	  <div class="text"><h3>Força</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">4 / 10</div>
+	  <div class="numbertext">04 / 09</div>
 	  <img src="img/apresentacao/04.jpg" style="width:100%">
-	  <div class="text">texto do slide 4</div>
+	  <div class="text"><h3>Foco na carreira</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">5 / 10</div>
+	  <div class="numbertext">05 / 09</div>
 	  <img src="img/apresentacao/05.jpg" style="width:100%">
-	  <div class="text">texto do slide 5</div>
+	  <div class="text"><h3>Você não esta só nesta jornada</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">6 / 10</div>
+	  <div class="numbertext">06 / 09</div>
 	  <img src="img/apresentacao/06.jpg" style="width:100%">
-	  <div class="text">texto do slide 6</div>
+	  <div class="text"><h3>Trabalho em equipe</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">7 / 10</div>
+	  <div class="numbertext">07 / 09</div>
 	  <img src="img/apresentacao/07.jpg" style="width:100%">
-	  <div class="text">texto do slide 1</div>
+	  <div class="text"><h3>Não olhe para trás</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">8 / 10</div>
+	  <div class="numbertext">08 / 09</div>
 	  <img src="img/apresentacao/08.jpg" style="width:100%">
-	  <div class="text">texto do slide 2</div>
+	  <div class="text"><h3>Juntos somos mais forte!</h3></div>
 	</div>
 
 	<div class="mySlides fade">
-	  <div class="numbertext">9 / 10</div>
-	  <img src="img/apresentacao/09.jpg" style="width:100%">
-	  <div class="text">texto do slide 3</div>
+	  <div class="numbertext">09 / 09</div>
+	  <img src="img/apresentacao/09.png" style="width:100%">
+	  <div class="text">Avante</div>
 	</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">10 / 10</div>
-	  <img src="img/apresentacao/10.png" style="width:100%">
-	  <div class="text">texto do slide 4</div>
-	</div>
+	
 
 	</div>
 	<br>
 
 	<div style="text-align:center">
-	  <span class="dot"></span> 
 	  <span class="dot"></span> 
 	  <span class="dot"></span> 
 	  <span class="dot"></span> 
@@ -175,7 +170,7 @@
 			    }
 			    slides[slideIndex-1].style.display = "block";  
 			    dots[slideIndex-1].className += " active";
-			    setTimeout(showSlides, 2000); // Change image every 2 seconds
+			    setTimeout(showSlides, 2500); // Altera img a cada 2.5s
 			}
 		</script>
 
