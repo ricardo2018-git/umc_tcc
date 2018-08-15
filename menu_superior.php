@@ -48,7 +48,7 @@
 	       			<!-- Botões -->
 	       				<div class="modal-footer row">
 							<div class="col-sm-4">
-	       						<span>Esqueci minha senha</span>
+	       						<a href="esqueci_minha_senha.php">Esqueci minha senha</a>
 	       					</div>
 
 	       					<div class="col-sm-4">
@@ -178,6 +178,7 @@
 									<img src="img/faculdade.jpg" class="img-circle" alt="Cinque Terre" height="100">
 								</div>
 							</div>
+							
 			        	</form>
 			        </div>
 			        <div class="modal-footer">

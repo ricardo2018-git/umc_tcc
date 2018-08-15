@@ -6,3 +6,9 @@ modal lodar
 slids
 	colocar uma cor preta nas letras
 	revisar numerações
+
+menu cadastro
+	botoes enviar e limpar estão fora das tags <form> rever isto
+
+
+estou mexendo na tela de esqueceu a senha
