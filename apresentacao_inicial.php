@@ -76,103 +76,105 @@
 	</head>
 
 	<body>
+		<div container>
+			<div class="panel panel-default">
+				<center><h2>UMC Presente na Anatomia Humana</h2></center><br/>
 
-	<center><h2>UMC Presente na Anatomia Humana</h2></center><br/>
+				<div class="slideshow-container">
 
-	<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">01 / 09</div>
+				  <img src="img/apresentacao/01.jpg" style="width:100%">
+				  <div class="text"><h3>UMC anatomia</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">01 / 09</div>
-	  <img src="img/apresentacao/01.jpg" style="width:100%">
-	  <div class="text"><h3>UMC anatomia</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">02 / 09</div>
+				  <img src="img/apresentacao/02.jpg" style="width:100%">
+				  <div class="text"><h3>Equilibrio com estudos</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">02 / 09</div>
-	  <img src="img/apresentacao/02.jpg" style="width:100%">
-	  <div class="text"><h3>Equilibrio com estudos</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">03 / 09</div>
+				  <img src="img/apresentacao/03.jpg" style="width:100%">
+				  <div class="text"><h3>Força</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">03 / 09</div>
-	  <img src="img/apresentacao/03.jpg" style="width:100%">
-	  <div class="text"><h3>Força</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">04 / 09</div>
+				  <img src="img/apresentacao/04.jpg" style="width:100%">
+				  <div class="text"><h3>Foco na carreira</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">04 / 09</div>
-	  <img src="img/apresentacao/04.jpg" style="width:100%">
-	  <div class="text"><h3>Foco na carreira</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">05 / 09</div>
+				  <img src="img/apresentacao/05.jpg" style="width:100%">
+				  <div class="text"><h3>Você não esta só nesta jornada</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">05 / 09</div>
-	  <img src="img/apresentacao/05.jpg" style="width:100%">
-	  <div class="text"><h3>Você não esta só nesta jornada</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">06 / 09</div>
+				  <img src="img/apresentacao/06.jpg" style="width:100%">
+				  <div class="text"><h3>Trabalho em equipe</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">06 / 09</div>
-	  <img src="img/apresentacao/06.jpg" style="width:100%">
-	  <div class="text"><h3>Trabalho em equipe</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">07 / 09</div>
+				  <img src="img/apresentacao/07.jpg" style="width:100%">
+				  <div class="text"><h3>Não olhe para trás</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">07 / 09</div>
-	  <img src="img/apresentacao/07.jpg" style="width:100%">
-	  <div class="text"><h3>Não olhe para trás</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">08 / 09</div>
+				  <img src="img/apresentacao/08.jpg" style="width:100%">
+				  <div class="text"><h3>Juntos somos mais forte!</h3></div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">08 / 09</div>
-	  <img src="img/apresentacao/08.jpg" style="width:100%">
-	  <div class="text"><h3>Juntos somos mais forte!</h3></div>
-	</div>
+				<div class="mySlides fade">
+				  <div class="numbertext">09 / 09</div>
+				  <img src="img/apresentacao/09.png" style="width:100%">
+				  <div class="text">Avante</div>
+				</div>
 
-	<div class="mySlides fade">
-	  <div class="numbertext">09 / 09</div>
-	  <img src="img/apresentacao/09.png" style="width:100%">
-	  <div class="text">Avante</div>
-	</div>
+				
 
-	
+				</div>
+				<br>
 
-	</div>
-	<br>
+				<div style="text-align:center">
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				</div>
 
-	<div style="text-align:center">
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	</div>
+				<script>
+					var slideIndex = 0;
+					showSlides();
 
-		<script>
-			var slideIndex = 0;
-			showSlides();
-
-			function showSlides() {
-			    var i;
-			    var slides = document.getElementsByClassName("mySlides");
-			    var dots = document.getElementsByClassName("dot");
-			    for (i = 0; i < slides.length; i++) {
-			       slides[i].style.display = "none";  
-			    }
-			    slideIndex++;
-			    if (slideIndex > slides.length) {slideIndex = 1}    
-			    for (i = 0; i < dots.length; i++) {
-			        dots[i].className = dots[i].className.replace(" active", "");
-			    }
-			    slides[slideIndex-1].style.display = "block";  
-			    dots[slideIndex-1].className += " active";
-			    setTimeout(showSlides, 2500); // Altera img a cada 2.5s
-			}
-		</script>
-
+					function showSlides() {
+					    var i;
+					    var slides = document.getElementsByClassName("mySlides");
+					    var dots = document.getElementsByClassName("dot");
+					    for (i = 0; i < slides.length; i++) {
+					       slides[i].style.display = "none";  
+					    }
+					    slideIndex++;
+					    if (slideIndex > slides.length) {slideIndex = 1}    
+					    for (i = 0; i < dots.length; i++) {
+					        dots[i].className = dots[i].className.replace(" active", "");
+					    }
+					    slides[slideIndex-1].style.display = "block";  
+					    dots[slideIndex-1].className += " active";
+					    setTimeout(showSlides, 2500); // Altera img a cada 2.5s
+					}
+				</script>
+			</div>
+		</div>
 	</body>
 </html> 

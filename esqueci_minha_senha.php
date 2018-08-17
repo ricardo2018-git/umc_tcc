@@ -51,7 +51,7 @@
 				<div class="col-sm-12">
 					<div class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-							<input placeholder="email@exemplo.com.br" type="email" class="form-control" />
+							<input type="email" placeholder="email@exemplo.com.br" class="form-control" required />
 					</div>
 				<div><br /><center>
 				<input type="submit" class="btn btn-success" value="Enviar" /></center>

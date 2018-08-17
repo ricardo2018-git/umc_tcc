@@ -1,14 +1,11 @@
-modal lodar
-	esqueci minha senha
+modal logar
 	fazer o menu x dos modais para celular
 	validações dos modais da tela de login
 
 slids
-	colocar uma cor preta nas letras
-	revisar numerações
+	colocar uma margem
 
 menu cadastro
 	botoes enviar e limpar estão fora das tags <form> rever isto
 
 
-estou mexendo na tela de esqueceu a senha

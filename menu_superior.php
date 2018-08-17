@@ -34,14 +34,14 @@
 	       			<!-- RGM e sua img -->
 		       			<div class="input-group">
 		       				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-	    					<input id="id_rgm" type="text" class="form-control" name="rgm" placeholder="RGM">
+	    					<input id="id_rgm" type="text" class="form-control" name="rgm" placeholder="RGM" required />
 		       			</div>
 	       			<!-- FIM RGM e sua img -->
 	       				<br/>
 	       			<!-- Senha e img -->
 	       				<div class="input-group">
 						    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-						    <input id="id_senha" type="password" class="form-control" name="senha" placeholder="Senha">
+						    <input id="id_senha" type="password" class="form-control" name="senha" placeholder="Senha" required />
 						</div>
 	       			<!-- FIM Senha e img -->
 
@@ -56,7 +56,7 @@
 	       					</div> 
 
 	       					<div class="col-sm-4">
-	       						<button type="button" class="btn btn-success btn-block">Logar</button>
+	       						<button type="submit" class="btn btn-success btn-block">Logar</button>
 	       					</div>
 	       				</div>
 	       			<!-- FIM Botões -->
@@ -178,13 +178,14 @@
 									<img src="img/faculdade.jpg" class="img-circle" alt="Cinque Terre" height="100">
 								</div>
 							</div>
-							
+
+							<div class="modal-footer">
+					        	<button type="submit" class="btn btn-success">Cadastrar</button>
+					        	<button type="reset" class="btn btn-default">Limpar</button>
+					        </div>
 			        	</form>
 			        </div>
-			        <div class="modal-footer">
-			          <button type="submit" class="btn btn-success">Cadastrar</button>
-			          <button type="reset" class="btn btn-default">Limpar</button>
-			        </div>
+			      
 			      </div>
 			      
 			    </div>
