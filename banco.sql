@@ -5,7 +5,7 @@ CREATE DATABASE anatomia;
 USE anatomia;
 
 /* --- Cria uma tabela --- */
-CREATE TABLE usuarios(
+CREATE TABLE usuario(
 	id_usu      	int not null PRIMARY KEY AUTO_INCREMENT,	/* Gera automatico, chave PK */
 	rgm_usu			varchar(12) not null,						/*Não pode ser nulo*/
 	nome_usu 		varchar(50) not null,						/*Não pode ser nulo*/

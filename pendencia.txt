@@ -1,11 +1,20 @@
 modal logar
 	fazer o menu x dos modais para celular
-	validações dos modais da tela de login
-
-slids
-	colocar uma margem
 
 menu cadastro
-	botoes enviar e limpar estão fora das tags <form> rever isto
+	colocar o campo para inserir uma foto do usuario
 
+criar class de validação
+	RGM
+	senha
+	confirma senha
+	nome 
+	cpf
+	email
+	endereço
+	cep 
+	complemento
+	cidade 
+	estado
+	telefone 	
 
