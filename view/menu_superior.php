@@ -26,7 +26,7 @@
 	          <h4 class="modal-title">Identifique-se</h4>
 	        </div>
 	        <div class="modal-body">
-	       		<form method="POST" action="registra_usuario.php">
+	       		<form method="POST" action="control/registra_usuario.php">
 	       			<!-- Img de login -->
 	       				<center><img src="img/login2.jpg" class="img-circle" alt="Cinque Terre" height="150"></center>
 	       			<!-- FIM Img de login -->	
@@ -48,7 +48,7 @@
 	       			<!-- Botões -->
 	       				<div class="modal-footer row">
 							<div class="col-sm-4">
-	       						<a href="esqueci_minha_senha.php">Esqueci minha senha</a>
+	       						<a href="view/esqueci_minha_senha.php">Esqueci minha senha</a>
 	       					</div>
 
 	       					<div class="col-sm-4">
@@ -86,7 +86,7 @@
 			          <h4 class="modal-title">Formulario de cadastro</h4>
 			        </div>
 			        <div class="modal-body">
-			        	<form method="POST" action="registra_usuario.php">
+			        	<form method="POST" action="control/registra_usuario.php">
 		        		
 		        			<div class="col-sm-8">
 		        				<div class="input-group">

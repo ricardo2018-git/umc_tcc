@@ -1,7 +1,7 @@
 <?php
 	
 	#avisa que vamos usar a class
-	require_once('class/db.class.php');
+	require_once('db.class.php');
 
 	#Recebe informações cadastrais do usuario
 	$nome 			= $_POST['nome'];

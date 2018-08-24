@@ -32,7 +32,7 @@
 					<a class="navbar-brand" href="#">UMC - Campus Villa-Lobos/Lapa</a>
 				</div>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.php"><span class="glyphicon glyphicon-log-in" ></span> Inicio</a></li>
+					<li><a href="../index.php"><span class="glyphicon glyphicon-log-in" ></span> Inicio</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -43,7 +43,7 @@
 
 		<div class="col-sm-4">
 			<div>
-				<center><img src="img/esqueci_minha_senha.jpg" id="img_senha" class="img-circle" alt="Cinque Terre" height="200">
+				<center><img src="../img/esqueci_minha_senha.jpg" id="img_senha" class="img-circle" alt="Cinque Terre" height="200">
 				<h3>Esqueci minha senha</h3></center>
 			</div>
 				
@@ -63,4 +63,4 @@
 		<div class="col-sm-4"></div>
 	</div>
 
-<?php require_once "roda_pe.php" ?>
+<?php require_once "../view/roda_pe.php" ?>

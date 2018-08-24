@@ -1,0 +1,6 @@
+view - tela de iteração com o cliente
+
+control - toda logica do sistema e conecta com o banco
+
+model - espelho do banco 
+
