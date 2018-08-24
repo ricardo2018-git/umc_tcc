@@ -2,34 +2,24 @@
 
 	class db{
 
-		#host
-			private $host = 'localhost';
-
-		#usuario
-			private $usuario = 'root';
-
-		#senha
-			private $senha = '';
-
-		#banco
-			private $database = 'anatomia';
+		#Credenciais p/ acessar o servidor
+		private $servidor = 'localhost';
+		private $usuario = 'root';
+		private $senha = '';
+		private $db = 'anatomia';
 
 
 		#conexao com o banco
-		public function conecta_mysql(){
+		public function Open(){
+			try{
 
-			#Abre a conexao
-			$con = mysqli_connect($this->host, $this->usuario, $this->senha, $this->database);
+				return new PDO("mysql:host=". $this->servidor . ";dbname=" . $this->db, $this->usuario, $this->$senha);
 
-			#configura padrao utf8
-			mysqli_set_charset($con, 'utf8');
+			}catch(PDOException $ex){ #Se houver erra na conexão
 
-			#verifica se houve erro de conexao
-			if(mysqli_connect_errno()){
-				echo 'Erro ao tentar se conectar com o BD: '. mysqli_connect_error();
+				echo "Erro ao se conectar com o banco: " . $ex->getMessage();
+
 			}
-
-			return $con;
 		}
 
 	}
