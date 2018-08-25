@@ -1,7 +1,7 @@
 <?php
 
-	require_once("control/db.class.php");		#Referencia a classe de conexao
-	require_once("model/Usuario.class.php");	#Referencia a classe usuario
+	require_once("../control/db.class.php");		#Referencia a classe de conexao
+	require_once("../model/Usuario.class.php");	#Referencia a classe usuario
 
 	class Registra{
 
@@ -9,7 +9,7 @@
 
 		public function Usuario($user){
 			try{
-				$conn new db();			#instancia um obj
+				$conn = new db();		#instancia um obj
 				$PDO = $conn->Open();	#Abre conexao com o banco
 
 				#Passando parametros para o insert

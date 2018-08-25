@@ -28,7 +28,7 @@
 	        <div class="modal-body">
 	       		<form method="POST" action="view/validar.php">
 	       			<!-- Img de login -->
-	       				<center><img src="img/login2.jpg" class="img-circle" alt="Cinque Terre" height="150"></center>
+	       				<center><img src="view/img/login2.jpg" class="img-circle" alt="Cinque Terre" height="150"></center>
 	       			<!-- FIM Img de login -->	
 
 	       			<!-- RGM e sua img -->
@@ -86,7 +86,7 @@
 			          <h4 class="modal-title">Formulario de cadastro</h4>
 			        </div>
 			        <div class="modal-body">
-			        	<form method="POST" action="model/Usuario.class.php">
+			        	<form method="POST" action="view/validar.php">
 		        		
 		        			<div class="col-sm-8">
 		        				<div class="input-group">
@@ -175,7 +175,7 @@
 								</div>
 							
 								<div id="img_facul">
-									<img src="img/faculdade.jpg" class="img-circle" alt="Cinque Terre" height="100">
+									<img src="view/img/faculdade.jpg" class="img-circle" alt="Cinque Terre" height="100">
 								</div>
 							</div>
 

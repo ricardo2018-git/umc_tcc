@@ -3,7 +3,7 @@
 	class Usuario{
 
 		#Atributos
-			private $id;
+			#private $id;
 			private $nome;
 			private $email;
 			private $rgm;
@@ -43,7 +43,7 @@
 			}
 
 			#public function getFoto(){
-			#	return $this->senha;
+			#	return $this->foto;
 			#}
 		#FIM Métodos
 	}

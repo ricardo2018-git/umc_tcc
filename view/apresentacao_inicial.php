@@ -82,62 +82,60 @@
 
 				<div class="slideshow-container">
 
-				<div class="mySlides fade">
-				  <div class="numbertext">01 / 09</div>
-				  <img src="img/apresentacao/01.jpg" style="width:100%">
-				  <div class="text"><h3>UMC anatomia</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">01 / 09</div>
+					  <img src="view/img/apresentacao/01.jpg" style="width:100%">
+					  <div class="text"><h3>UMC anatomia</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">02 / 09</div>
-				  <img src="img/apresentacao/02.jpg" style="width:100%">
-				  <div class="text"><h3>Equilibrio com estudos</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">02 / 09</div>
+					  <img src="view/img/apresentacao/02.jpg" style="width:100%">
+					  <div class="text"><h3>Equilibrio com estudos</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">03 / 09</div>
-				  <img src="img/apresentacao/03.jpg" style="width:100%">
-				  <div class="text"><h3>Força</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">03 / 09</div>
+					  <img src="view/img/apresentacao/03.jpg" style="width:100%">
+					  <div class="text"><h3>Força</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">04 / 09</div>
-				  <img src="img/apresentacao/04.jpg" style="width:100%">
-				  <div class="text"><h3>Foco na carreira</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">04 / 09</div>
+					  <img src="view/img/apresentacao/04.jpg" style="width:100%">
+					  <div class="text"><h3>Foco na carreira</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">05 / 09</div>
-				  <img src="img/apresentacao/05.jpg" style="width:100%">
-				  <div class="text"><h3>Você não esta só nesta jornada</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">05 / 09</div>
+					  <img src="view/img/apresentacao/05.jpg" style="width:100%">
+					  <div class="text"><h3>Você não esta só nesta jornada</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">06 / 09</div>
-				  <img src="img/apresentacao/06.jpg" style="width:100%">
-				  <div class="text"><h3>Trabalho em equipe</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">06 / 09</div>
+					  <img src="view/img/apresentacao/06.jpg" style="width:100%">
+					  <div class="text"><h3>Trabalho em equipe</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">07 / 09</div>
-				  <img src="img/apresentacao/07.jpg" style="width:100%">
-				  <div class="text"><h3>Não olhe para trás</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">07 / 09</div>
+					  <img src="view/img/apresentacao/07.jpg" style="width:100%">
+					  <div class="text"><h3>Não olhe para trás</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">08 / 09</div>
-				  <img src="img/apresentacao/08.jpg" style="width:100%">
-				  <div class="text"><h3>Juntos somos mais forte!</h3></div>
-				</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">08 / 09</div>
+					  <img src="view/img/apresentacao/08.jpg" style="width:100%">
+					  <div class="text"><h3>Juntos somos mais forte!</h3></div>
+					</div>
 
-				<div class="mySlides fade">
-				  <div class="numbertext">09 / 09</div>
-				  <img src="img/apresentacao/09.png" style="width:100%">
-				  <div class="text">Avante</div>
-				</div>
-
+					<div class="mySlides fade">
+					  <div class="numbertext">09 / 09</div>
+					  <img src="view/img/apresentacao/09.png" style="width:100%">
+					  <div class="text">Avante</div>
+					</div>
 				
-
 				</div>
 				<br>
 

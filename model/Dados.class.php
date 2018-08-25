@@ -17,7 +17,6 @@
 		#Método construtor
 			public function __construct($cpf, $endereco, $cep, $complemento, $cidade, $estado, $telefone, $sexo, $nac){
 				$this->cpf 				= $cpf;
-			#	$this->confirma_senha	= $confirma_senha;
 				$this->endereco			= $endereco;
 				$this->cep 				= $cep;
 				$this->complemento		= $complemento;
