@@ -15,7 +15,7 @@
 
 				return new PDO("mysql:host=". $this->servidor . ";dbname=" . $this->db, $this->usuario, $this->$senha);
 
-			}catch(PDOException $ex){ #Se houver erra na conexão
+			}catch(PDOException $ex){ #Se houver erro na conexão
 
 				echo "Erro ao se conectar com o banco: " . $ex->getMessage();
 
