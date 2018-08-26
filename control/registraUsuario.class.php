@@ -13,12 +13,13 @@
 				$PDO = $conn->Open();	#Abre conexao com o banco
 
 				#Passando parametros para o insert
-				$id    = $id   -> getId();
-				$nome  = $user -> getNome();
-				$email = $email -> getEmail();
-				$rgm   = $rgm  -> getRgm();
-				$senha = $senha-> getSenha();
-				#$foto  = $foto -> getFoto();
+					$id    = $user   -> getId();
+					$nome  = $user -> getNome();
+					$email = $user -> getEmail();
+					$rgm   = $user  -> getRgm();
+					$senha = $user -> getSenha();
+					#$foto  = $user -> getFoto();
+				#FIM Passando parametros para o insert
 
 				#Query de insert
 				$sql = "INSERT INTO usuario(id_usu, rgm_usu, nome_usu, email_usu, senha_usu) 
