@@ -3,7 +3,7 @@
 	class Usuario{
 
 		#Atributos
-			#private $id;
+			private $id;
 			private $nome;
 			private $email;
 			private $rgm;
@@ -12,7 +12,8 @@
 		#FIM Atributos
 
 		#Método Construtor
-			public function __construct($nome, $email, $rgm, $senha){
+			public function __construct($id, $nome, $email, $rgm, $senha){
+				$this->id    = $id;
 				$this->nome  = $nome;
 				$this->email = $email;
 				$this->rgm   = $rgm;

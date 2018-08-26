@@ -21,7 +21,6 @@ CREATE TABLE endereco(
 	id_usu			int not null, FOREIGN KEY(id_usu) REFERENCES usuario(id_usu),/*FK*/
 	endereco		varchar(50),
 	complemento 	varchar(30),
-	#numero			varchar(10),
 	cep				varchar(50),
 	cidade			varchar(50),
 	estado			char(3),

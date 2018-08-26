@@ -1,13 +1,13 @@
 <?php
 
 	require_once("../control/db.class.php");		#Referencia a classe de conexao
-	require_once("../model/Usuario.class.php");	#Referencia a classe usuario
+	require_once("../model/Usuario.class.php");		#Referencia a classe usuario
 
 	class Registra{
 
 		public function Listar(){}
 
-		public function Usuario($user){
+		public function Cadastrar($user){
 			try{
 				$conn = new db();		#instancia um obj
 				$PDO = $conn->Open();	#Abre conexao com o banco
@@ -21,8 +21,8 @@
 				#$foto  = $foto -> getFoto();
 
 				#Query de insert
-				$sql = "INSERT INTO usuario(rgm_usu, nome_usu, email_usu, senha_usu) 
-									VALUES('".$rgm."', '".$nome."', '".$email."', '".$senha."')";
+				$sql = "INSERT INTO usuario(id_usu, rgm_usu, nome_usu, email_usu, senha_usu) 
+									VALUES('".null."','".$rgm."', '".$nome."', '".$email."', '".$senha."')";
 
 				#executa a query
 				$PDO->Query($sql);

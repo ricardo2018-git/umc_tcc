@@ -13,7 +13,7 @@
 		public function Open(){
 			try{
 
-				return new PDO("mysql:host=". $this->servidor . ";dbname=" . $this->db, $this->usuario, $this->$senha);
+				return new PDO("mysql:host=". $this->servidor . ";dbname=" . $this->db, $this->usuario, $this->senha);
 
 			}catch(PDOException $ex){ #Se houver erro na conexão
 
