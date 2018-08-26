@@ -1,4 +1,8 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 img {
   border-radius: 50%;
@@ -33,11 +37,28 @@ img {
 	<!-- FIM Manu superiro -->
 
 	<!-- Corpo -->  
-		<ul class="nav nav-tabs">
-			<li class=""><a href="#">Aluno</a></li>
-			<li class=""><a href="#">Professor</a></li>
-			<li class=""><a href="#">Administração</a></li>
-		</ul>
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class=""><a data-toggle="tab" href="#aluno">Aluno</a></li>
+				<li class="active"><a data-toggle="tab" href="#professor">Professor</a></li>
+				<li class=""><a data-toggle="tab" href="#administracao">Administração</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="aluno" class="tab-pane fade">
+					<h3>ALUNO</h3>
+				</div>
+			
+			
+				<div id="professor" class="tab-pane fade in active">
+					<h3>PROFESSOR</h3>
+				</div>
+			
+			
+				<div id="administracao" class="tab-pane fade">
+					<h3>ADIMINISTRAÇÃO</h3>
+				</div>
+			</div>
+		</div>
 	<!-- Corpo -->  
 
 <!-- Busca outra PG -->

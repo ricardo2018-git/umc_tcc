@@ -18,3 +18,5 @@ criar class de validação
 	estado
 	telefone 	
 
+arrumar a posição do nome da pessoa na pg home
+
