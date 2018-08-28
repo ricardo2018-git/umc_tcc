@@ -20,3 +20,5 @@ criar class de validação
 
 arrumar a posição do nome da pessoa na pg home
 
+arrumar o insert da segunda tabela
+

@@ -3,11 +3,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- imagem do usuario superiro esquerdo da tela -->
 <style>
 img {
-  border-radius: 50%;
+	position: absolute;
+	border-radius: 50%;
+	left: 50px;
+	top: 60px;
 }
+#submenu {
+	margin: 10px 120px;
+}
+
+.container{
+	border: 0px solid red;
+	margin-left: 350px;
+}
+
 </style>
+
 <!-- Busca outra PG -->
 <?php require_once "../head.php" ?>
 
@@ -17,18 +32,16 @@ img {
 				<div class="navbar-header">
 					<!-- Imagem do usuario logado -->
 						<div>
-							<img src="img/usuario_h.png" alt="Avatar" style="width:50px">
+							<img src="conf/img/usuario_h.png" alt="Avatar" style="width:100px">
 						</div>
 					<!-- FIM Imagem do usuario logado -->
 					<!-- -->
 						<div>
-							Nome: Ricardo Ramos Paixão
+							<h4>UMC</h4>
 						</div>
 				</div>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" data-toggle="modal" data-target="#ent" ><span class="glyphicon glyphicon-log-in" ></span> Contato</a></li>
-
-					
+					<li><a href="#" data-toggle="modal" data-target="#ent" ><span class="glyphicon glyphicon-log-in" ></span> Sobre</a></li>
 
 					<li><a href="#" data-toggle="modal" data-target="#cad" ><span class="glyphicon glyphicon-user"></span> Sair</a></li>
 				</ul>
@@ -38,7 +51,7 @@ img {
 
 	<!-- Corpo -->  
 		<div class="container">
-			<ul class="nav nav-tabs">
+			<ul id="submenu" class="nav nav-tabs">
 				<li class=""><a data-toggle="tab" href="#aluno">Aluno</a></li>
 				<li class="active"><a data-toggle="tab" href="#professor">Professor</a></li>
 				<li class=""><a data-toggle="tab" href="#administracao">Administração</a></li>

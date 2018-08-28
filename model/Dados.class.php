@@ -2,6 +2,8 @@
 
 	class Dados{
 		#Atributos
+		 	private $id_end;
+			private $id_usu;
 			private $cpf;
 			private $confirma_senha;
 			private $endereco;
@@ -15,7 +17,9 @@
 		#FIM Atributos
 
 		#Método construtor
-			public function __construct($cpf, $endereco, $cep, $complemento, $cidade, $estado, $telefone, $sexo, $nac){
+			public function __construct($id_end, $id_usu, $cpf, $endereco, $cep, $complemento, $cidade, $estado, $telefone, $sexo, $nac){
+				$this->id_end 			= $id_end;
+				$this->id_usu			= $id_usu;
 				$this->cpf 				= $cpf;
 				$this->endereco			= $endereco;
 				$this->cep 				= $cep;
@@ -29,36 +33,44 @@
 		#FIM Método construtor
 
 		#Métodos
+			public function getId_end(){
+				return $this->id_end;
+			}
+
+			public function getId_usu(){
+				return $this->id_usu;
+			}
+
 			public function getCpf(){
-				return $this->nome;
+				return $this->cpf;
 			}
 
 			public function getEndereco(){
-				return $this->email;
+				return $this->endereco;
 			}
 
 			public function getCep(){
-				return $this->rgm;
+				return $this->cep;
 			}
 
 			public function getComplemento(){
-				return $this->senha;
+				return $this->complemento;
 			}
 
 			public function getCidade(){
-				return $this->nome;
+				return $this->cidade;
 			}
 
 			public function getEstado(){
-				return $this->email;
+				return $this->estado;
 			}
 
 			public function getTelefone(){
-				return $this->rgm;
+				return $this->telefone;
 			}
 
 			public function getSexo(){
-				return $this->senha;
+				return $this->sexo;
 			}
 
 			public function getNac(){
