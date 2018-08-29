@@ -20,7 +20,11 @@ img {
 	border: 0px solid red;
 	margin-left: 350px;
 }
-
+/*Desabilita item do meu aluno, professor, administrador*/
+.disabled{
+	pointer-events: none;
+	opacity: 0.6;
+}
 </style>
 
 <!-- Busca outra PG -->
@@ -52,20 +56,18 @@ img {
 	<!-- Corpo -->  
 		<div class="container">
 			<ul id="submenu" class="nav nav-tabs">
-				<li class=""><a data-toggle="tab" href="#aluno">Aluno</a></li>
-				<li class="active"><a data-toggle="tab" href="#professor">Professor</a></li>
-				<li class=""><a data-toggle="tab" href="#administracao">Administração</a></li>
+				<li class="active"><a data-toggle="tab" href="#aluno">Aluno</a></li>
+				<li class="disabled"><a data-toggle="tab" href="#professor">Professor</a></li>
+				<li class="disabled"><a data-toggle="tab" href="#administracao">Administração</a></li>
 			</ul>
 			<div class="tab-content">
 				<div id="aluno" class="tab-pane fade">
 					<h3>ALUNO</h3>
 				</div>
 			
-			
 				<div id="professor" class="tab-pane fade in active">
 					<h3>PROFESSOR</h3>
 				</div>
-			
 			
 				<div id="administracao" class="tab-pane fade">
 					<h3>ADIMINISTRAÇÃO</h3>

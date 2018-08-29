@@ -16,7 +16,7 @@
 	$id = $u->ListarId();
 
 	# Insert do restante dos dados
-	$u->Dados(new Dados(null, "$id", $_POST["cpf"], $_POST["endereco"], $_POST["cep"], $_POST["complemento"], $_POST["cidade"], $_POST["estado"], $_POST["telefone"], $_POST["sexo"], $_POST["nac"]));
+	$u->Dados(new Dados(null, $id, $_POST["cpf"], $_POST["endereco"], $_POST["cep"], $_POST["complemento"], $_POST["cidade"], $_POST["estado"], $_POST["telefone"], $_POST["sexo"], $_POST["nac"]));
 
 	#verifica se foi cadastrado realmente [ Tenho q melhorar isto ]
 	#if($u){

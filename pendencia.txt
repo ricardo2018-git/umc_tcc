@@ -22,3 +22,5 @@ arrumar a posição do nome da pessoa na pg home
 
 arrumar o insert da segunda tabela
 
+organizar conteudo home aluno colocar-lo mais p/ baixo
+

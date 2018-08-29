@@ -10,11 +10,20 @@
 				$conn = new db();		#instancia um obj
 				$PDO = $conn->Open();	#Abre conexao com o banco
 
-				#Query de insert
-				$sql = " SELECT max(id_usu) from usuario ";
+				#Query de select
+				$sql = "SELECT max(id_usu) as id from usuario";
 
 				#executa a query
-				return $id = $PDO->Query($sql);
+				$result = $PDO->Query($sql);
+
+				$id = null;
+
+				foreach ($result as $key => $row){
+					$id = $row["id"];
+					break;
+				}
+
+				return $id;
 
 			}catch(Exception $e){
 				throw new Exception("Erro tentar cadastrar Usuario", 1);
@@ -70,7 +79,7 @@
 
 				#Query de insert
 				$sql = "INSERT INTO endereco(id_end, id_usu, endereco, complemento, cep, cidade, estado, telefone, cpf, sexo, nacionalidade) 
-							VALUES('".null."','".null."', '".$endereco."', '".$complemento."', '".$cep."', '".$cidade."', '".$estado."', '".$telefone."', '".$cpf."', '".$sexo."', '".$nac."')";
+							VALUES('".null."','".$id_usu."', '".$endereco."', '".$complemento."', '".$cep."', '".$cidade."', '".$estado."', '".$telefone."', '".$cpf."', '".$sexo."', '".$nac."')";
 
 				#executa a query
 				$PDO->Query($sql);
