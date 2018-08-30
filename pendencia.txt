@@ -1,5 +1,3 @@
-modal logar
-	fazer o menu x dos modais para celular
 
 menu cadastro
 	colocar o campo para inserir uma foto do usuario
@@ -18,9 +16,8 @@ criar class de validação
 	estado
 	telefone 	
 
-arrumar a posição do nome da pessoa na pg home
+analisar o style da pg home p/ ver se vai ser necessario ou fazer um novo, mais provavel
 
-arrumar o insert da segunda tabela
 
 organizar conteudo home aluno colocar-lo mais p/ baixo
 
