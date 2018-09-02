@@ -19,21 +19,26 @@
 	#execulta query
 	$dados = $PDO->Query($sql);
 
-	var_dump($dados);
-/*
+	#declara var
+	$rgmB = null;
+	$senhaB = null;
+	
+	#Pega somente os dados necessarios do select
 	foreach($dados as $key => $row){
-		$rgm   = $row['rgm_usu'];
-		$nome  = $row['nome_usu'];
-		$nivel = $row['nivel_usu'];
+		$rgmB   = $row['rgm_usu'];
+		$senhaB = $row['senha_usu'];
+	} 
+
+	#Compara dados do usuario com o do banco
+	$a = strcmp($rgm,$rgmB);
+	$b = strcmp($senha,$senhaB);
+
+	#Compara credenciais do usuario com o banco
+	if($a == 0 && $b == 0){
+		echo 'Usuario OK';
+		# Iniciar Session AQUI !!!
+	}else{
+		header('Location: ../index.php?cadastro=3');
 	}
 
-	#Passando o resultado obtido p/ array
-	foreach($result as $key => $row){
-		$dados[] = new Usuario(
-			$row['id_usu'],
-			$row['nome'],
-			$row['email']
-		);
-	}
-*/
 ?>

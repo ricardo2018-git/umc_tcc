@@ -9,17 +9,22 @@
 					$cadastro = isset($_GET['cadastro']) ? $_GET['cadastro'] : 0;
 				?>
 				<?php
-					if($cadastro == 1){
+					if($cadastro == 1){		#Usuario cadastrado com sucesso
 	 					echo '<div class="alert alert-success alert-dismissible">
 							  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 								<center><strong> Usuario cadastrado com sucesso...</strong></center>
 							  </div>';
 							  #Para limpar url do navegador tentar mais depois
 							  #Onclick="window.location.href='index.php?'";
-					}else if($cadastro == 2){
+					}else if($cadastro == 2){	#Erro ao cadastrar
 						echo '<div class="alert alert-danger" alert-dismissible">
 								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 								<center><strong> Não foi possivel efetuar o cadastro...</strong></center>
+						  	  </div>';
+					}else if($cadastro == 3){	# Usuario não cadastrado
+						echo '<div class="alert alert-danger" alert-dismissible">
+								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+								<center><strong> RGM ou senha invalido !!!</strong></center>
 						  	  </div>';
 					}
 				?>

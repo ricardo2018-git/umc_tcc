@@ -24,3 +24,5 @@ alinhar os inputs de cadastro e img da UMC q não esta aparecendo quendo faço o
 validação da senha e confirme senha com javaScript
 
 nao deixar a pessoa se cadastrar mais de uma vez validar os dados antes de efetuar o cadastro
+
+validação do usuario
