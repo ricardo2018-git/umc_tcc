@@ -5,7 +5,6 @@
 		 	private $id_end;
 			private $id_usu;
 			private $cpf;
-			private $confirma_senha;
 			private $endereco;
 			private $cep;
 			private $complemento;

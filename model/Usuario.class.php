@@ -4,6 +4,7 @@
 
 		#Atributos
 			private $id;
+			private $nivel;
 			private $nome;
 			private $email;
 			private $rgm;
@@ -12,8 +13,9 @@
 		#FIM Atributos
 
 		#Método Construtor
-			public function __construct($id, $nome, $email, $rgm, $senha){
+			public function __construct($id, $nivel, $nome, $email, $rgm, $senha){
 				$this->id    = $id;
+				$this->nivel = $nivel;
 				$this->nome  = $nome;
 				$this->email = $email;
 				$this->rgm   = $rgm;
@@ -25,6 +27,10 @@
 		#Métodos
 			public function getId(){
 				return $this->id;
+			}
+
+			public function getNivel(){
+				return $this->nivel;
 			}
 
 			public function getNome(){

@@ -34,7 +34,7 @@
 	          <h4 class="modal-title">Identifique-se</h4>
 	        </div>
 	        <div class="modal-body">
-	       		<form method="POST" action="#">
+	       		<form method="POST" action="control/valida_acesso.php">
 	       			<!-- Img de login -->
 	       				<center><img src="view/img/login2.jpg" class="img-circle" alt="Cinque Terre" height="150"></center>
 	       			<!-- FIM Img de login -->	

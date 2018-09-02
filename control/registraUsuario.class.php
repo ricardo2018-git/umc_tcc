@@ -38,6 +38,7 @@
 
 				#Passando parametros para o insert
 					$id    = $user -> getId();
+					$nivel = $user -> getNivel();
 					$nome  = $user -> getNome();
 					$email = $user -> getEmail();
 					$rgm   = $user -> getRgm();
@@ -46,8 +47,8 @@
 				#FIM Passando parametros para o insert
 
 				#Query de insert
-				$sql = "INSERT INTO usuario(id_usu, rgm_usu, nome_usu, email_usu, senha_usu) 
-							VALUES('".null."','".$rgm."', '".$nome."', '".$email."', '".$senha."')";
+				$sql = "INSERT INTO usuario(id_usu, rgm_usu, nivel_usu, nome_usu, email_usu, senha_usu) 
+							VALUES('".null."', '".$rgm."', '".$nivel."', '".$nome."', '".$email."', '".$senha."')";
 
 				#executa a query
 				$PDO->Query($sql);

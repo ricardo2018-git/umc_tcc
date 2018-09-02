@@ -20,3 +20,7 @@ analisar o style da pg home p/ ver se vai ser necessario ou fazer um novo, mais 
 organizar conteudo home aluno colocar-lo mais p/ baixo
 
 alinhar os inputs de cadastro e img da UMC q não esta aparecendo quendo faço o teste mobai
+
+validação da senha e confirme senha com javaScript
+
+nao deixar a pessoa se cadastrar mais de uma vez validar os dados antes de efetuar o cadastro
