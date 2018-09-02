@@ -27,6 +27,7 @@
 	foreach($dados as $key => $row){
 		$rgmB   = $row['rgm_usu'];
 		$senhaB = $row['senha_usu'];
+		$nivel  = $row['nivel_usu'];
 	} 
 
 	#Compara dados do usuario com o do banco
@@ -35,7 +36,16 @@
 
 	#Compara credenciais do usuario com o banco
 	if($a == 0 && $b == 0){
-		echo 'Usuario OK';
+		# Direciona para pg correta depende do nivel de acesso do usuario...
+		if($nivel == 0){	# Aguardando aprovação do ADMINISTRADOR
+			echo 'Estou no aguarde de aprovação !!!';
+		}else if($nivel == 1){	# Nivel de Aluno
+			echo 'Sou aluno !!!';
+		}else if($nivel == 2){	# Nivel de Professor
+			echo 'Sou Professor !!!';
+		}else if($nivel == 3){	# Nivel de Administrador
+			echo 'Sou Administrador !!!';
+		}
 		# Iniciar Session AQUI !!!
 	}else{
 		header('Location: ../index.php?cadastro=3');

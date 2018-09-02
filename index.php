@@ -14,8 +14,6 @@
 							  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 								<center><strong> Usuario cadastrado com sucesso...</strong></center>
 							  </div>';
-							  #Para limpar url do navegador tentar mais depois
-							  #Onclick="window.location.href='index.php?'";
 					}else if($cadastro == 2){	#Erro ao cadastrar
 						echo '<div class="alert alert-danger" alert-dismissible">
 								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
