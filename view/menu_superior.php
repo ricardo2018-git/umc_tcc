@@ -96,26 +96,26 @@
 			        <div class="modal-body">
 			        	<form method="POST" action="control/validar.php">
 		        		
-		        			<div class="col-sm-8">
+		        			<div class="col-sm-6">
 		        				<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
 									<input placeholder="Nome" type="text" name="nome" class="form-control" id="for_nome" required />
 								</div>
 		        			</div>
 			        		
-							<div class="col-sm4 input-group">
+							<div class="col-sm-6 input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 								<input placeholder="CPF" name="cpf" type="text" class="form-control" id="for_cpf" maxlength="11" required />
 							</div>
 						
-							<div class="col-sm-8">
+							<div class="col-sm-6">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 									<input placeholder="email@exemplo.com.br" name="email" type="email" class="form-control" id="for_email" required />
 								</div>		
 							</div>
 						
-							<div class="col-sm4 input-group">
+							<div class="col-sm-6 input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
 								<input placeholder="RGM" name="rgm" type="text" class="form-control" id="for_rgm" maxlength="11" required />
 							</div>					
@@ -132,17 +132,17 @@
 								<input placeholder="Confirma Senha" name="confirma_senha" type="password" class="form-control" id="for_senha" maxlength="6" required />
 							</div>							
 						
-							<div class="col-sm-9">
+							<div class="col-sm-6">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
 									<input placeholder="Endereço" name="endereco" type="text" class="form-control" id="for_endereco" />
 								</div>
 							</div>
 
-							<div class="">
+							<div class="col-sm-6">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-									<input placeholder="Cep" name="cep" type="text" class="form-control" id="for_complemento" />
+									<input placeholder="Cep" name="cep" type="text" class="form-control" id="for_cep" />
 								</div>
 							</div>
 
@@ -153,7 +153,7 @@
 								</div>
 							</div>
 							
-							<div class="input-group">
+							<div class="col-sm-6 input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
 								<input placeholder="Cidade" name="cidade" type="text" class="form-control" id="for_cidade" />
 							</div>
@@ -165,7 +165,7 @@
 								</div>
 							</div>
 							
-							<div class="input-group">
+							<div class="col-sm-6 input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
 								<input placeholder="Telefone" name="telefone" type="tel" class="form-control" id="for_telefone" />
 							</div>
@@ -188,7 +188,7 @@
 							</div>
 
 							<div class="modal-footer">
-					        	<button type="submit" class="btn btn-success">Cadastrar</button>
+					        	<button type="submit" class="btn btn-success" onclick="apagaForm()" />Cadastrar</button>
 					        	<button type="reset" class="btn btn-default">Limpar</button>
 					        </div>
 			        	</form>
@@ -203,7 +203,7 @@
 
 			<!-- Script faz o menu superior abrir e fecha com as opções ||| -->
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+			
 		</body>
    <!-- Modal Cadastro -->
 

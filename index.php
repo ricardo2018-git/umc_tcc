@@ -1,6 +1,32 @@
 <?php require_once "view/head.php" ?>
 <?php require_once "view/menu_superior.php" ?>
 	<div container>
+
+		<!-- JavaScript seta nossa URL passando valor 0 e redireciona para index, assim quando atualizar não abre a msg cadastrado com sucesso -->
+		<div onclick="window.location.href='index.php?cadastro=0',window.location.href='index.php';">
+			<!-- Logica p/ apresenta mensagem de usuario cadastrado com sucesoo -->
+				<?php
+					$cadastro = isset($_GET['cadastro']) ? $_GET['cadastro'] : 0;
+				?>
+				<?php
+					if($cadastro == 1){
+	 					echo '<div class="alert alert-success alert-dismissible">
+							  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+								<center><strong> Usuario cadastrado com sucesso...</strong></center>
+							  </div>';
+							  #Para limpar url do navegador tentar mais depois
+							  #Onclick="window.location.href='index.php?'";
+					}else if($cadastro == 2){
+						echo '<div class="alert alert-danger" alert-dismissible">
+								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+								<center><strong> Não foi possivel efetuar o cadastro...</strong></center>
+						  	  </div>';
+					}
+				?>
+			<!-- FIM Logica p/ apresenta mensagem de usuario cadastrado com sucesoo -->
+		</div>
+
+
 		<?php require_once "view/apresentacao_inicial.php" ?>
 		
 	</div>
