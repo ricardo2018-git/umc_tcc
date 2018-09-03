@@ -13,7 +13,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<!-- Meu css -->
-		<link rel="stylesheet" href="../css/css2.css">
+		<link rel="stylesheet" href="conf/css/home.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,28 +22,6 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-<!-- imagem do usuario superior esquerdo da tela 
-<style>
-img {
-	position: relative;
-	border-radius: 50%;
-	left: 50px;
-	top: 60px;
-}
-#submenu {
-	margin: 10px 120px;
-}
-
-.container{
-	border: 0px solid red;
-	margin-left: 350px;
-}
-/*Desabilita item do meu aluno, professor, administrador*/
-.disabled{
-	pointer-events: none;
-	opacity: 0.6;
-}
-</style> -->
 
 	</head>
 	
@@ -71,24 +49,41 @@ img {
 
 	<!-- Corpo -->  
 		<div class="container">
-			<ul id="submenu" class="nav nav-tabs">
-				<li class="active"><a data-toggle="tab" href="#aluno">Aluno</a></li>
-				<li class="disabled"><a data-toggle="tab" href="#professor">Professor</a></li>
-				<li class="disabled"><a data-toggle="tab" href="#administracao">Administração</a></li>
-			</ul>
-			<div class="tab-content">
-				<div id="aluno" class="tab-pane fade">
-					<h3>ALUNO</h3>
+			<!-- Imagem do usuario -->
+				<div class="row">
+					<div>
+						<img src="conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
+					</div>
+				</div>
+			<!-- FIM Imagem do usuario -->
+
+			<!-- Propaganda -->
+				<div id="propaganda">
+					<!-- RESERVADO PARA PROPRAGANDA -->
+				</div>
+			<!-- FIM Propaganda -->
+
+				<div id="submenu">
+					<ul class="nav nav-tabs">
+						<li class=""><a data-toggle="tab" href="#aluno">Aluno</a></li>
+						<li class=""><a data-toggle="tab" href="#professor">Professor</a></li>
+						<li class=""><a data-toggle="tab" href="#administracao">ADM...</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="aluno" class="tab-pane fade">
+							<h3>ALUNO</h3>
+						</div>
+					
+						<div id="professor" class="tab-pane fade">
+							<h3>PROFESSOR</h3>
+						</div>
+					
+						<div id="administracao" class="tab-pane fade">
+							<h3>ADIMINISTRAÇÃO</h3>
+						</div>
+					</div>
 				</div>
 			
-				<div id="professor" class="tab-pane fade in active">
-					<h3>PROFESSOR</h3>
-				</div>
-			
-				<div id="administracao" class="tab-pane fade">
-					<h3>ADIMINISTRAÇÃO</h3>
-				</div>
-			</div>
 		</div>
 	<!-- Corpo -->  
 

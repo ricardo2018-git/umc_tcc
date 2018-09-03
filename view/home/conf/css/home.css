@@ -1,0 +1,24 @@
+img{
+	border: 1px solid red;
+	position: relative;
+	border-radius: 50%;
+	left: 5px;
+	top: -15px;
+}
+
+#propaganda{
+	position: relative;		/*Ajuda posicionar elementos*/
+	border: 1px solid red;	/*Borda para facilitar a visualização*/
+	width: 70%;				/*Largura automatica*/
+	height: 100px;			/*Largura p/ baixo*/
+	left: 100px;			/*posição p/ direita*/
+	top: -110px;			/*posição p/ cima*/
+}
+
+#submenu{
+	position: relative;		/*Ajuda posicionar elementos*/
+	width: 100%;			/*Largura automatica*/
+	border: 1px solid red;	/*Borda para facilitar a visualização*/
+	left: 0px;
+	top: -90px;
+}

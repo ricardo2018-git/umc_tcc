@@ -11,7 +11,7 @@
 	try{
 		#Cria obj e passa os parametros
 		$u = new Registra();
-		$u->Cadastrar(new Usuario(null, 1, $_POST["nome"], $_POST["email"], $_POST["rgm"], $_POST["senha"]));
+		$u->Cadastrar(new Usuario(null, 0, $_POST["nome"], $_POST["email"], $_POST["rgm"], $_POST["senha"]));
 
 		#busca ultimo id inserido no bd
 		$id = $u->ListarId();
