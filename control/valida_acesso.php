@@ -1,5 +1,8 @@
 <?php
 	
+	#Inicia a session
+	session_start();
+
 	#Permite usar atributos e metodos desta class
 	require_once('../control/db.class.php');
 /*	require_once('../control/registraUsuario.class.php');
@@ -43,9 +46,11 @@
 	
 	#Pega somente os dados necessarios do select
 	foreach($dados as $key => $row){
-		$rgmB   = $row['rgm_usu'];
-		$senhaB = $row['senha_usu'];
-		$nivel  = $row['nivel_usu'];
+		$rgmB    = $row['rgm_usu'];
+		$senhaB  = $row['senha_usu'];
+		$nivelB  = $row['nivel_usu'];
+		$nomeB   = $row['nome_usu'];
+		$emailB  = $row['email_usu'];
 	} 
 
 	#Compara dados do usuario com o do banco
@@ -54,6 +59,13 @@
 
 	#Compara credenciais do usuario com o banco
 	if($a == 0 && $b == 0){
+		# Inicia session
+			$_SESSION['nome'] = $nomeB;
+			$_SESSION['rgm'] = $rgmB;
+			$_SESSION['nivel'] = $nivelB;
+			$_SESSION['email'] = $emailB;
+		# FIM Inicia session
+
 		# Direciona para pg correta depende do nivel de acesso do usuario...
 		if($nivel == 0){	# Aguardando aprovação do ADMINISTRADOR
 			header('Location: ../view/home/aprovacao/home.php');

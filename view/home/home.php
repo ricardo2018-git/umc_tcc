@@ -49,19 +49,30 @@
 
 	<!-- Corpo -->  
 		<div class="container">
-			<!-- Imagem do usuario -->
-				<div class="row">
-					<div>
-						<img src="conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
-					</div>
-				</div>
-			<!-- FIM Imagem do usuario -->
 
-			<!-- Propaganda -->
-				<div id="propaganda">
-					<!-- RESERVADO PARA PROPRAGANDA -->
+			<div class="row">
+				<div class="col-md-4">
+					<!-- Imagem do usuario -->
+						<div class="row">
+							<div>
+								<img src="conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
+							</div>
+						</div>
+					<!-- FIM Imagem do usuario -->
 				</div>
-			<!-- FIM Propaganda -->
+
+				<div class="col-md-4">
+					<!-- Propaganda -->
+						<div id="propaganda">
+							<!-- RESERVADO PARA PROPRAGANDA -->
+						</div>
+					<!-- FIM Propaganda -->
+				</div>
+				
+				<div class="col-md-4">
+
+				</div>
+			</div>
 
 				<div id="submenu">
 					<ul class="nav nav-tabs">

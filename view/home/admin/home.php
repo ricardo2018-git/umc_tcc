@@ -1,3 +1,14 @@
+<?php 
+	# Inicia session
+	session_start();
+
+	# Verifica se a session não existe
+	if(!isset($_SESSION['nome'])){
+		#redireciona para index passando get 
+		header('Location: ../../../index.php?cadastro=4');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -84,7 +95,12 @@
 						</div>
 					
 						<div id="administracao" class="tab-pane fade">
-							<h3>ADIMINISTRAÇÃO</h3>
+							<h3>ADIMINISTRAÇÃO</h3><?php
+							$_SESSION['nome'] = $nomeB;
+			$_SESSION['rgm'] = $rgmB;
+			$_SESSION['nivel'] = $nivelB;
+			$_SESSION['email'] = $emailB;
+			?>
 						</div>
 					</div>
 				</div>
