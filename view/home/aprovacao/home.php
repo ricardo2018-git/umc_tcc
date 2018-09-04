@@ -13,7 +13,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<!-- Meu css -->
-		<link rel="stylesheet" href="conf/css/home.css">
+		<link rel="stylesheet" href="../conf/css/home.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,7 +52,7 @@
 			<!-- Imagem do usuario -->
 				<div class="row">
 					<div>
-						<img src="conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
+						<img src="../conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
 					</div>
 				</div>
 			<!-- FIM Imagem do usuario -->
@@ -65,16 +65,16 @@
 
 				<div id="submenu">
 					<ul class="nav nav-tabs">
-						<li class="<?php if($_GET["nivel"] == 0) echo 'active'; ?>"><a data-toggle="tab" href="#espera">Espera</a></li>
-						<li class="<?php if($_GET["nivel"] == 1) echo 'active'; ?>"><a data-toggle="tab" href="#aluno">Aluno</a></li>
-						<li class="<?php if($_GET["nivel"] == 2) echo 'active'; ?>"><a data-toggle="tab" href="#professor">Professor</a></li>
-						<li class="<?php if($_GET["nivel"] == 3) echo 'active'; ?>"><a data-toggle="tab" href="#administracao">ADM...</a></li>
+						<li class="active"><a data-toggle="tab" href="#espera">Espera</a></li>
+						<li class=""><a data-toggle="tab" href="#aluno">Aluno</a></li>
+						<li class=""><a data-toggle="tab" href="#professor">Professor</a></li>
+						<li class=""><a data-toggle="tab" href="#administracao">ADM...</a></li>
 					</ul>
 					<div class="tab-content">
 						<div id="espera" class="tab-pane fade">
 							<h3>Sala de Espera</h3>
 						</div>
-						
+
 						<div id="aluno" class="tab-pane fade">
 							<h3>ALUNO</h3>
 						</div>
@@ -96,4 +96,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- Busca outra PG -->
-<?php require_once "../roda_pe.php" ?>
+<?php require_once "../../roda_pe.php" ?>

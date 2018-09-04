@@ -2,7 +2,7 @@
 	
 	#Permite usar atributos e metodos desta class
 	require_once('../control/db.class.php');
-	require_once('../control/registraUsuario.class.php');
+/*	require_once('../control/registraUsuario.class.php');
 
 	$u = new Registra();
 
@@ -20,8 +20,7 @@
 	}else{
 		echo 'não esta registrado novo';
 	}
-
-/*
+*/
 	#Dados recebido do usuario
 	$rgm = $_POST['log_rgm'];
 	$senha = $_POST['log_senha'];
@@ -57,17 +56,21 @@
 	if($a == 0 && $b == 0){
 		# Direciona para pg correta depende do nivel de acesso do usuario...
 		if($nivel == 0){	# Aguardando aprovação do ADMINISTRADOR
+			header('Location: ../view/home/aprovacao/home.php');
 			echo 'Estou no aguarde de aprovação !!!';
 		}else if($nivel == 1){	# Nivel de Aluno
+			header('Location: ../view/home/aluno/home.php');
 			echo 'Sou aluno !!!';
 		}else if($nivel == 2){	# Nivel de Professor
+			header('Location: ../view/home/professor/home.php');
 			echo 'Sou Professor !!!';
 		}else if($nivel == 3){	# Nivel de Administrador
+			header('Location: ../view/home/admin/home.php');
 			echo 'Sou Administrador !!!';
 		}
 		# Iniciar Session AQUI !!!
 	}else{
 		header('Location: ../index.php?cadastro=3');
 	}
-*/
+
 ?>
