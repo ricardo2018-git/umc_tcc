@@ -92,7 +92,29 @@
 
 		public function alterar($user){}
 
-		public function Pesquisar($nome){}
+		public function Listar(){
+			try{
+				$dados = array();
+				$conn = new db();
+				$PDO = $conn->Open();
+
+				$sql = "SELECT * FROM usuario";
+
+				$result = $PDO->Query($sql);
+
+				foreach($result as $key => $row){
+					$dados[] = new Usuario(
+						$row["id_usu"],
+						$row["rgm_usu"],
+						$row["nome_usu"],
+						$row["email_usu"],
+						$row["senha_usu"]
+					);
+				}
+			}catch(Exception $e){
+				throw new Exception("Erro ao processar Request", 1);
+			}
+		}
 		
 		public function Excluir($id){}
 	}
