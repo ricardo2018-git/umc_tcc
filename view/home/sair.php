@@ -8,4 +8,6 @@
 	unset($_SESSION['sexo']);
 	unset($_SESSION['foto']);
 
+	header('Location: ../../index.php?sai');
+
 ?>
