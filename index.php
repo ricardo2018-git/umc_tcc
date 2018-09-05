@@ -26,6 +26,7 @@
 						  	  </div>';
 					}else if($cadastro == 4){	# Se usuario tenta invadir o sistema
 						echo '<div class="alert alert-warning">
+								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   								<center><strong>Te pegamos!</strong> Você não vai invadir nosso sistema.</strong></center>
 							 </div>';
 					}

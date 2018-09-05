@@ -1,3 +1,14 @@
+<?php 
+	# Inicia session
+	session_start();
+
+	# Verifica se a session não existe
+	if(!isset($_SESSION['nome'])){
+		#redireciona para index passando get 
+		header('Location: ../../../index.php?cadastro=4');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -52,7 +63,22 @@
 			<!-- Imagem do usuario -->
 				<div class="row">
 					<div>
-						<img src="../conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
+						<?php
+							if($_SESSION['foto'] == null){
+
+								if($_SESSION['sexo'] == 'm'){ # Foto macoluno
+									echo '<img src="../conf/img/usuario_h.png" class="img-circle" alt="Cinque Terre" width=100px>';
+
+								}else if($_SESSION['sexo'] == 'f'){ # Foto feminino
+									echo '<img src="../conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>';
+
+								}else if($_SESSION['sexo'] == 'a'){	# Foto Outros
+									echo '<img src="../conf/img/usuario_h2.png" class="img-circle" alt="Cinque Terre" width=100px>';
+								}
+							}else{
+								# Pegar foto do banco
+							}
+						?>
 					</div>
 				</div>
 			<!-- FIM Imagem do usuario -->
@@ -81,6 +107,13 @@
 					
 						<div id="professor" class="tab-pane fade">
 							<h3>PROFESSOR</h3>
+							<?php
+								$_SESSION['nome'] = $nomeB;
+								$_SESSION['rgm'] = $rgmB;
+								$_SESSION['nivel'] = $nivelB;
+								$_SESSION['email'] = $emailB;
+								#$_SESSION['foto'] = $fotoB;
+							?>
 						</div>
 					
 						<div id="administracao" class="tab-pane fade">

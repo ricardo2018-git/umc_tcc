@@ -31,8 +31,11 @@
 	$conn = new db();		#Chama conexao
 	$PDO = $conn->Open();	#Abre a conexao
 
-	#Consulta
-	$sql = "SELECT * FROM usuario WHERE rgm_usu = '$rgm' AND senha_usu = '$senha' ";
+	#Consulta com inner join
+	$sql = "SELECT * FROM usuario as u
+				INNER JOIN endereco as e
+					ON u.id_usu = e.id_usu
+						WHERE rgm_usu = '$rgm' AND senha_usu = '$senha' ";
 
 	#Os dados do select será armazenados aqui
 	$dados = array();
@@ -46,41 +49,37 @@
 	
 	#Pega somente os dados necessarios do select
 	foreach($dados as $key => $row){
-		$rgmB    = $row['rgm_usu'];
-		$senhaB  = $row['senha_usu'];
-		$nivelB  = $row['nivel_usu'];
-		$nomeB   = $row['nome_usu'];
-		$emailB  = $row['email_usu'];
+		$_SESSION['rgm']    = $row['rgm_usu'];
+		$_SESSION['nivel']  = $row['nivel_usu'];
+		$_SESSION['nome']   = $row['nome_usu'];
+		$_SESSION['sexo']   = $row['sexo'];
+		$_SESSION['foto']    = $row['foto_usu'];
+		$_SESSION['senha'] = $row['senha_usu'];
 	} 
 
 	#Compara dados do usuario com o do banco
-	$a = strcmp($rgm,$rgmB);
-	$b = strcmp($senha,$senhaB);
+	$a = strcmp($rgm,$_SESSION['rgm']);
+	$b = strcmp($senha,$_SESSION['senha']);
 
 	#Compara credenciais do usuario com o banco
 	if($a == 0 && $b == 0){
 		# Inicia session
-			$_SESSION['nome'] = $nomeB;
-			$_SESSION['rgm'] = $rgmB;
-			$_SESSION['nivel'] = $nivelB;
-			$_SESSION['email'] = $emailB;
+			$_SESSION['nome'];
+			$_SESSION['rgm'];
+			$_SESSION['nivel'];
+			$_SESSION['sexo'];
 		# FIM Inicia session
 
 		# Direciona para pg correta depende do nivel de acesso do usuario...
 		if($nivel == 0){	# Aguardando aprovação do ADMINISTRADOR
 			header('Location: ../view/home/aprovacao/home.php');
-			echo 'Estou no aguarde de aprovação !!!';
 		}else if($nivel == 1){	# Nivel de Aluno
 			header('Location: ../view/home/aluno/home.php');
-			echo 'Sou aluno !!!';
 		}else if($nivel == 2){	# Nivel de Professor
 			header('Location: ../view/home/professor/home.php');
-			echo 'Sou Professor !!!';
 		}else if($nivel == 3){	# Nivel de Administrador
 			header('Location: ../view/home/admin/home.php');
-			echo 'Sou Administrador !!!';
 		}
-		# Iniciar Session AQUI !!!
 	}else{
 		header('Location: ../index.php?cadastro=3');
 	}

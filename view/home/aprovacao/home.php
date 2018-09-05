@@ -1,3 +1,14 @@
+<?php 
+	# Inicia session
+	session_start();
+
+	# Verifica se a session não existe
+	if(!isset($_SESSION['nome'])){
+		#redireciona para index passando get 
+		header('Location: ../../../index.php?cadastro=4');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -41,7 +52,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#" data-toggle="modal" data-target="#ent" ><span class="glyphicon glyphicon-log-in" ></span> Sobre</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#cad" ><span class="glyphicon glyphicon-user"></span> Sair</a></li>
+					<li><a href="../sair.php" data-toggle="modal" data-target="#cad" ><span class="glyphicon glyphicon-user"></span> Sair</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -52,7 +63,23 @@
 			<!-- Imagem do usuario -->
 				<div class="row">
 					<div>
-						<img src="../conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
+						<?php
+							if($_SESSION['foto'] == null){
+
+								if($_SESSION['sexo'] == 'm'){ # Foto macoluno
+									echo '<img src="../conf/img/usuario_h.png" class="img-circle" alt="Cinque Terre" width=100px>';
+
+								}else if($_SESSION['sexo'] == 'f'){ # Foto feminino
+									echo '<img src="../conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>';
+
+								}else if($_SESSION['sexo'] == 'a'){	# Foto Outros
+									echo '<img src="../conf/img/usuario_h2.png" class="img-circle" alt="Cinque Terre" width=100px>';
+								}
+							}else{
+								# Pegar foto do banco
+							}
+						?>
+						
 					</div>
 				</div>
 			<!-- FIM Imagem do usuario -->
@@ -73,6 +100,9 @@
 					<div class="tab-content">
 						<div id="espera" class="tab-pane fade">
 							<h3>Sala de Espera</h3>
+							<?php
+								
+							?>
 						</div>
 
 						<div id="aluno" class="tab-pane fade">
