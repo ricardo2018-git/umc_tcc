@@ -50,60 +50,8 @@
 	<!-- Corpo -->  
 		<div class="container">
 
-			<div class="row">
-				<div class="col-md-4">
-					<!-- Imagem do usuario -->
-						<div class="row">
-							<div>
-								<img src="conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>
-							</div>
-						</div>
-					<!-- FIM Imagem do usuario -->
-				</div>
+			<?php require_once "menu_lateral.php" ?>
 
-				<div class="col-md-4">
-					<!-- Propaganda -->
-						<div id="propaganda">
-							<!-- RESERVADO PARA PROPRAGANDA -->
-						</div>
-					<!-- FIM Propaganda -->
-				</div>
-				
-				<div class="col-md-4">
-
-				</div>
-			</div>
-
-				<div id="submenu">
-					<ul class="nav nav-tabs">
-						<li class="<?php if($_GET["nivel"] == 0) echo 'active'; ?>"><a data-toggle="tab" href="#espera">Espera</a></li>
-						<li class="<?php if($_GET["nivel"] == 1) echo 'active'; ?>"><a data-toggle="tab" href="#aluno">Aluno</a></li>
-						<li class="<?php if($_GET["nivel"] == 2) echo 'active'; ?>"><a data-toggle="tab" href="#professor">Professor</a></li>
-						<li class="<?php if($_GET["nivel"] == 3) echo 'active'; ?>"><a data-toggle="tab" href="#administracao">ADM...</a></li>
-					</ul>
-					<div class="tab-content">
-						<div id="espera" class="tab-pane fade">
-							<h3>Sala de Espera</h3>
-							home fora
-						</div>
-						
-						<div id="aluno" class="tab-pane fade">
-							<h3>ALUNO</h3>
-							home fora
-						</div>
-					
-						<div id="professor" class="tab-pane fade">
-							<h3>PROFESSOR</h3>
-							home fora
-						</div>
-					
-						<div id="administracao" class="tab-pane fade">
-							<h3>ADIMINISTRAÇÃO</h3>
-							home fora
-						</div>
-					</div>
-				</div>
-			
 		</div>
 	<!-- Corpo -->  
 
