@@ -4,21 +4,21 @@
 
 		#Atributos
 			private $id;
+			private $rgm;
 			private $nivel;
 			private $nome;
 			private $email;
-			private $rgm;
 			private $senha;
 			#private $foto;
 		#FIM Atributos
 
 		#Método Construtor
-			public function __construct($id, $nivel, $nome, $email, $rgm, $senha){
+			public function __construct($id, $rgm, $nivel, $nome, $email, $senha){
 				$this->id    = $id;
+				$this->rgm   = $rgm;
 				$this->nivel = $nivel;
 				$this->nome  = $nome;
 				$this->email = $email;
-				$this->rgm   = $rgm;
 				$this->senha = $senha;
 				#$this->foto  = $foto;
 			}
@@ -27,6 +27,10 @@
 		#Métodos
 			public function getId(){
 				return $this->id;
+			}
+
+			public function getRgm(){
+				return $this->rgm;
 			}
 
 			public function getNivel(){
@@ -39,10 +43,6 @@
 
 			public function getEmail(){
 				return $this->email;
-			}
-
-			public function getRgm(){
-				return $this->rgm;
 			}
 
 			public function getSenha(){

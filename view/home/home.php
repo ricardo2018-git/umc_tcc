@@ -84,18 +84,22 @@
 					<div class="tab-content">
 						<div id="espera" class="tab-pane fade">
 							<h3>Sala de Espera</h3>
+							home fora
 						</div>
 						
 						<div id="aluno" class="tab-pane fade">
 							<h3>ALUNO</h3>
+							home fora
 						</div>
 					
 						<div id="professor" class="tab-pane fade">
 							<h3>PROFESSOR</h3>
+							home fora
 						</div>
 					
 						<div id="administracao" class="tab-pane fade">
 							<h3>ADIMINISTRAÇÃO</h3>
+							home fora
 						</div>
 					</div>
 				</div>

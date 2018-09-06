@@ -29,6 +29,11 @@
 								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   								<center><strong>Te pegamos!</strong> Você não vai invadir nosso sistema.</strong></center>
 							 </div>';
+					}else if($cadastro == 5){
+						echo '<div class="alert alert-info">
+								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  								<center><strong>Volte sempre, mantenha seu estudo em dia!!!</strong></center>
+							 </div>';
 					}
 				?>
 			<!-- FIM Logica p/ apresenta mensagem de usuario cadastrado com sucesoo -->

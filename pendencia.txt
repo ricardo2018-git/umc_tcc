@@ -26,3 +26,5 @@ validação da senha e confirme senha com javaScript
 nao deixar a pessoa se cadastrar mais de uma vez validar os dados antes de efetuar o cadastro
 
 construindo pg home base, olhando menu lateral
+
+passar valor por get p/ obter msg de volte sempre cor azul na index

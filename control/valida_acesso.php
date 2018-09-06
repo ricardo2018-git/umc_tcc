@@ -1,3 +1,4 @@
+
 <?php
 	
 	#Inicia a session
@@ -5,25 +6,55 @@
 
 	#Permite usar atributos e metodos desta class
 	require_once('../control/db.class.php');
-/*	require_once('../control/registraUsuario.class.php');
-
+	require_once('../control/registraUsuario.class.php');
+/*
 	$u = new Registra();
 
+
 	$cont = 0;
+	echo $_POST["log_rgm"].'<br>';
+	echo $_POST["log_senha"];
+	echo '<br><br>';
 
 	foreach ($u->Listar() as $key => $obj){
-		if($_POST["log_rgm"] == $obj->getRgm && $_POST["log_senha"] == $obj->getSenha){
+		if( $log_rgm == $obj->getRgm() && $log_senha == $obj->getSenha()){
 			$cont++;
 			break;
 		}
 	}
+
+	echo $a = $obj->getRgm(); #getRgm
+	echo '<br>';
+	echo $b = $obj->getSenha();
+
+	echo '<br><br>';
 
 	if($cont > 0){
 		echo 'já esta registrado novo';
 	}else{
 		echo 'não esta registrado novo';
 	}
+
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	#Dados recebido do usuario
 	$rgm = $_POST['log_rgm'];
 	$senha = $_POST['log_senha'];

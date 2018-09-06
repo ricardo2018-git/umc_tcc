@@ -8,6 +8,7 @@
 	unset($_SESSION['sexo']);
 	unset($_SESSION['foto']);
 
-	header('Location: ../../index.php?sai');
+	# passar valor get p/ obter msg na index de volte sempre. [pendencia]
+	header('Location: ../../index.php?cadastro=5');
 
 ?>

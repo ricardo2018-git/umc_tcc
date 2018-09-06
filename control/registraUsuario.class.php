@@ -38,10 +38,10 @@
 
 				#Passando parametros para o insert
 					$id    = $user -> getId();
+					$rgm   = $user -> getRgm();
 					$nivel = $user -> getNivel();
 					$nome  = $user -> getNome();
 					$email = $user -> getEmail();
-					$rgm   = $user -> getRgm();
 					$senha = $user -> getSenha();
 					#$foto  = $user -> getFoto();
 				#FIM Passando parametros para o insert
@@ -106,11 +106,13 @@
 					$dados[] = new Usuario(
 						$row["id_usu"],
 						$row["rgm_usu"],
+						$row["nivel_usu"],
 						$row["nome_usu"],
 						$row["email_usu"],
 						$row["senha_usu"]
 					);
 				}
+				return $dados;
 			}catch(Exception $e){
 				throw new Exception("Erro ao processar Request", 1);
 			}
