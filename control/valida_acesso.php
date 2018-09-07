@@ -102,13 +102,13 @@
 		# FIM Inicia session
 
 		# Direciona para pg correta depende do nivel de acesso do usuario...
-		if($nivel == 0){	# Aguardando aprovação do ADMINISTRADOR
+		if($_SESSION['nivel'] == 0){	# Aguardando aprovação do ADMINISTRADOR
 			header('Location: ../view/home/aprovacao/home.php');
-		}else if($nivel == 1){	# Nivel de Aluno
+		}else if($_SESSION['nivel'] == 1){	# Nivel de Aluno
 			header('Location: ../view/home/aluno/home.php');
-		}else if($nivel == 2){	# Nivel de Professor
+		}else if($_SESSION['nivel'] == 2){	# Nivel de Professor
 			header('Location: ../view/home/professor/home.php');
-		}else if($nivel == 3){	# Nivel de Administrador
+		}else if($_SESSION['nivel'] == 3){	# Nivel de Administrador
 			header('Location: ../view/home/admin/home.php');
 		}
 	}else{
