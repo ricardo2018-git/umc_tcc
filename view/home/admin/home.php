@@ -13,7 +13,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<!-- Meu css -->
-		<!--<link rel="stylesheet" href="conf/css/home.css">	-->
+		<!--  <link rel="stylesheet" href="conf/css/home.css">  -->
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,6 +21,7 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
 
 
 	</head>
@@ -41,7 +42,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#" data-toggle="modal" data-target="#ent" ><span class="glyphicon glyphicon-log-in" ></span> Sobre</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#cad" ><span class="glyphicon glyphicon-user"></span> Sair</a></li>
+					<li><a href="../sair.php"><span class="glyphicon glyphicon-user"></span> Sair</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -59,4 +60,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- Busca outra PG -->
-<?php require_once "../roda_pe.php" ?>
+<?php require_once "../../roda_pe.php" ?>
