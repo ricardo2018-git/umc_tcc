@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
@@ -66,7 +67,7 @@ body {
 
 /*Img do ususario*/
 #img{
-  border: 1px solid red;
+
   position: relative;
   left: 0px;
   top: -20px;
@@ -171,8 +172,9 @@ body {
 
         <div class="col-md-4">
           <!-- Propaganda -->
-            <div id="propaganda">
+            <div>
               <!-- RESERVADO PARA PROPRAGANDA -->
+              
             </div>
           <!-- FIM Propaganda -->
         </div>
@@ -185,7 +187,7 @@ body {
         <div id="submenu">
           <ul class="nav nav-tabs">
             
-            <li class=""><a data-toggle="tab" href="#" onclick="openNav()">Inicie aqui</a></li>
+            <li class=""><a data-toggle="tab" href="#" onclick="openNav()" style="color:Tomato;">Inicie aqui</a></li>
             <li class="desativa"><a data-toggle="tab" href="#aluno">Aluno</a></li>
             <li class="desativa"><a data-toggle="tab" href="#professor">Professor</a></li>
             <li class="active"><a data-toggle="tab" href="#administracao">ADM...</a></li>
