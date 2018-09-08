@@ -41,7 +41,7 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" data-toggle="modal" data-target="#ent" ><span class="glyphicon glyphicon-log-in" ></span> Sobre</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" ></span> Sobre</a></li>
 					<li><a href="../sair.php"><span class="glyphicon glyphicon-user"></span> Sair</a></li>
 				</ul>
 			</div>

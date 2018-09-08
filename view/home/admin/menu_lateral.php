@@ -12,7 +12,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body {
     font-family: "Lato", sans-serif;
@@ -72,10 +73,52 @@ body {
   width: 102px;
 }
 .desativa {
-    pointer-events: none;
+  pointer-events: none;
   cursor: default;
   opacity: 0.6;
   text-decoration: line-through;  /*Risca a palavra no meio*/
+}
+
+/* ------------------------------------------------------- */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 85%;  /*100%*/
+    /*-----------------*/
+    position:relative;
+    left:25%;
+    top:25%;
+}
+.column {
+    float: left;
+    width: 75.0%; /*33.3%*/
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+@media screen and (max-width: 85%) {  /*650px*/
+    .column {
+        width: 85%;
+        display: block;
+    }
+}
+.container {
+    padding: 0 16px;
+}
+.title {
+    color: grey;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+}
+.button:hover {
+    background-color: #555;
 }
 
 </style>
@@ -90,7 +133,7 @@ body {
   <a href="#" onclick="closeNav()">Ler FeedBack</a>
   <a href="#" onclick="closeNav()">Permissões</a>
   <a href="#" onclick="closeNav()">Validar Conteudo</a>
-  <a href="../sobre2.php" onclick="closeNav()">Sobre</a>
+  <a href="#" onclick="closeNav()" data-toggle="modal" data-target="#myModal">Sobre</a> <!-- chama modal sobre -->
   <a href="../sair.php" onclick="closeNav()">Saír</a>
 </div>
 
@@ -170,9 +213,102 @@ body {
           </div>
         </div>
 
+        <!-- modal sobre -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Nossa Equipe</h4>
+                </div>
+                  <div class="modal-body">
+                    
+                    <!-- integrante -->
+                      <div class="row">
+                        <div class="column">
+                          <div class="card">
+                            <img src="../conf/img/equipe/e1.png" alt="Jane" class="mx-auto d-block" style="width:100%">
+                            <div class="container">
+                              
+                              <h2>Gustavo S.</h2>
+                              <p class="title">Analista &amp; Programador</p>
+                              <p>gustavo@example.com</p>
+                              <p><button class="button">Contato</button></p>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div class="card">
+                            <img src="../conf/img/equipe/e2.png" alt="Jane" style="width:100%">
+                            <div class="container">
+                              
+                              <h2>Rafael M.</h2>
+                              <p class="title">Analista &amp; Programador</p>
+                              <p>rafael@example.com</p>
+                              <p><button class="button">Contato</button></p>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div class="card">
+                            <img src="../conf/img/equipe/e3.png" alt="Jane" style="width:100%">
+                            <div class="container">
+                              
+                              <h2>Ricardo R.</h2>
+                              <p class="title">Analista &amp; Programador</p>
+                              <p>ricardo@example.com</p>
+                              <p><button class="button">Contato</button></p>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div class="card">
+                            <img src="../conf/img/equipe/e4.png" alt="Jane" style="width:100%">
+                            <div class="container">
+                              
+                              <h2>Victor H.</h2>
+                              <p class="title">Analista &amp; Programador</p>
+                              <p>victorh@example.com</p>
+                              <p><button class="button">Contato</button></p>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="column">
+                          <div class="card">
+                            <img src="../conf/img/equipe/e5.png" alt="Jane" style="width:100%">
+                            <div class="container">
+                              
+                              <h2>Victor S.</h2>
+                              <p class="title">Analista &amp; Programador</p>
+                              <p>victors@example.com</p>
+                              <p><button class="button">Contato</button></p>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- FIM integrante -->
+                  
+                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <!-- FIM modal sobre -->
 <!-- Conteudo -->
-
-
 
 </div>
 
