@@ -131,10 +131,9 @@ body {
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
     <a href="#" onclick="closeNav()">Perfil</a>
-    <a href="#" onclick="closeNav()">Cadastrar Colaborador</a>
-    <a href="#" onclick="closeNav()">Ler FeedBack</a>
-    <a href="#" onclick="closeNav()">Permissões</a>
-    <a href="#" onclick="closeNav()">Validar Conteudo</a>
+    <a href="#" onclick="closeNav()">Cadastrar Materia</a>
+    <a href="#" onclick="closeNav()">E-mail de Aluno</a>
+    <a href="#" onclick="closeNav()">FeedBack</a>
     <a href="#" onclick="closeNav()" data-toggle="modal" data-target="#myModal">Sobre</a> <!-- chama modal sobre -->
     <a href="../sair.php" onclick="closeNav()">Saír</a>
   </div>
@@ -191,15 +190,11 @@ body {
             
             <li class=""><a data-toggle="tab" href="#" onclick="openNav()" style="color:Tomato;">Inicie aqui</a></li>
             <li class="desativa"><a data-toggle="tab" href="#aluno">Aluno</a></li>
-            <li class="desativa"><a data-toggle="tab" href="#professor">Professor</a></li>
-            <li class="active"><a data-toggle="tab" href="#administracao">ADM...</a></li>
+            <li class="active"><a data-toggle="tab" href="#professor">Professor</a></li>
+            <li class="desativa"><a data-toggle="tab" href="#administracao">ADM...</a></li>
           </ul>
           <div class="tab-content">
-            <div id="espera" class="tab-pane fade">
-              <h3>Sala de Espera</h3>
-              home fora
-            </div>
-            
+                        
             <div id="aluno" class="tab-pane fade">
               <h3>ALUNO</h3>
               home fora
