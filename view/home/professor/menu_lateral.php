@@ -131,7 +131,7 @@ body {
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
     <a href="#" onclick="closeNav()">Perfil</a>
-    <a href="#" onclick="closeNav()">Nova Materia</a>
+    <a href="novaMateria.php" onclick="closeNav()">Nova Materia</a>
     <a href="#" onclick="closeNav()">Notif. de E-mail</a>
     <a href="#" onclick="closeNav()">FeedBack</a>
     <a href="#" onclick="closeNav()" data-toggle="modal" data-target="#myModal">Sobre</a> <!-- chama modal sobre -->

@@ -197,7 +197,7 @@ body {
 
           <div>
               <h3>Sala de Espera</h3>
-              <p>Você foi direcionado para sala de espera, ou seja Você tem que aguardar aprovoção do administrador do sistema, isso pode legar alguns dias !!!</p>
+              <p>Você foi direcionado para sala de espera, ou seja você tem que aguardar aprovoção do administrador do sistema, isso pode legar alguns dias !!!</p>
             </div>
 
           <div class="tab-content">
