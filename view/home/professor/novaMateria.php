@@ -26,26 +26,24 @@
 				  <h2>Nova Disciplina</h2>
 
 					<form class="form-group">
-						<label for="no">Assunto:</label>
+						<label for="no">* Assunto:</label>
 						<input type="text" class="form-control" id="no">
-						<label for="ti">Titulo:</label>
+						<label for="ti">* Titulo:</label>
 						<input type="text" class="form-control" id="ti">
-						<label for="co">Conteudo:</label>
+						<label for="co">* Conteudo:</label>
 						<textarea class="form-control" rows="5" id="co"></textarea>
-						Imagem:<br>
+						<label for="img">Imagem:</label>
+						<input type="file" name="file"><br>
 						<label for="pro">Professor:</label>
 						<input type="text"class="form-control" id="pro"> 
-
-						<br><br>
-					  <button type="button" class="btn btn-success">Enviar</button>
-					  <button type="button" class="btn btn-warning">Limpar</button>
-					  <button type="button" class="btn btn-info">Visualizar</button><br><br>
 					  <div class="radio">
 						  <label><input type="radio" name="optradio">Salvar</label>
 						  <label><input type="radio" name="optradio">Buscar</label>
-					  </div> 
-					  <button type="button" class="btn btn-default">Rascunho</button>
-					 	 
+					  </div>
+					  <button type="button" class="btn btn-default">Rascunho</button><br><br>
+					  <button type="button" class="btn btn-success">Enviar</button>
+					  <button type="button" class="btn btn-warning">Limpar</button>
+					  <button type="button" class="btn btn-info">Visualizar</button><br><br>	 
 					</form>
 				</div>
 
