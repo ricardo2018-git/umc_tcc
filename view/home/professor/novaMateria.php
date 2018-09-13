@@ -37,8 +37,8 @@
 						<label for="pro">Professor:</label>
 						<input type="text"class="form-control" id="pro"> 
 					  <div class="radio">
-						  <label><input type="radio" name="optradio">Salvar</label>
-						  <label><input type="radio" name="optradio">Buscar</label>
+						  <label><input type="radio" name="ras" value="salvar">Salvar</label>
+						  <label><input type="radio" name="ras" value="buscar">Buscar</label>
 					  </div>
 					  <button type="submit" class="btn btn-default" name="rascunho">Rascunho</button><br><br>
 					  <button type="submit" class="btn btn-success" name="enviar">Enviar</button>

@@ -14,6 +14,8 @@
 	# Compara o name do btn pressionado, e direciona
 		switch(get_post_action('rascunho', 'enviar', 'limpar', 'visualizar')){
 			case 'rascunho':
+				# Recebe radio selecionado salva ou buscar
+				echo $_POST['ras'].'<br>';
 				echo 'rascunho';
 				break;
 			case 'enviar':
