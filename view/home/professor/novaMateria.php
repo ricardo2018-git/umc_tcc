@@ -25,7 +25,7 @@
 				<div class="col-sm-6">
 				  <h2>Nova Disciplina</h2>
 
-					<form class="form-group">
+					<form class="form-group" action="../../../control/novaMateria.php" id="form" method="post">
 						<label for="no">* Assunto:</label>
 						<input type="text" class="form-control" id="no">
 						<label for="ti">* Titulo:</label>
@@ -40,10 +40,10 @@
 						  <label><input type="radio" name="optradio">Salvar</label>
 						  <label><input type="radio" name="optradio">Buscar</label>
 					  </div>
-					  <button type="button" class="btn btn-default">Rascunho</button><br><br>
-					  <button type="button" class="btn btn-success">Enviar</button>
-					  <button type="button" class="btn btn-warning">Limpar</button>
-					  <button type="button" class="btn btn-info">Visualizar</button><br><br>	 
+					  <button type="submit" class="btn btn-default" name="rascunho">Rascunho</button><br><br>
+					  <button type="submit" class="btn btn-success" name="enviar">Enviar</button>
+					  <button type="submit" class="btn btn-warning" name="limpar">Limpar</button>
+					  <button type="submit" class="btn btn-info" name="visualizar">Visualizar</button><br><br>	 
 					</form>
 				</div>
 
