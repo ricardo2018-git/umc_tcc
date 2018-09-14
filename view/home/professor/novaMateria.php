@@ -1,13 +1,3 @@
-<?php
-
-	# Menu Superior
-	
-	# Conteudo
-
-	# Roda-pé
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

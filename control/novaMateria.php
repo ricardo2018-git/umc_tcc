@@ -14,9 +14,13 @@
 	# Compara o name do btn pressionado, e direciona
 		switch(get_post_action('rascunho', 'enviar', 'limpar', 'visualizar')){
 			case 'rascunho':
-				# Recebe radio selecionado salva ou buscar
-				echo $_POST['ras'].'<br>';
+				# Recebe radio selecionado (salvar ou buscar)
+				$rascunho = isset($_POST['ras']) ? $_POST['ras'] : 0;
+				if($rascunho){
+					echo $rascunho;
+				}
 				echo 'rascunho';
+				#header('Location: ../view/home/aprovacao/home.php');
 				break;
 			case 'enviar':
 				echo 'enviar';

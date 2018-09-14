@@ -129,9 +129,9 @@ body {
 <!-- Opções do menu lateral -->
   <div id="mySidenav" class="sidenav sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
+    <a href="home.php?novaMateria=0"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
     <a href="#" onclick="closeNav()">Perfil</a>
-    <a href="novaMateria.php" onclick="closeNav()">Nova Materia</a>
+    <a href="home.php?novaMateria=2" onclick="closeNav()">Nova Materia</a>
     <a href="#" onclick="closeNav()">Notif. de E-mail</a>
     <a href="#" onclick="closeNav()">FeedBack</a>
     <a href="#" onclick="closeNav()" data-toggle="modal" data-target="#myModal">Sobre</a> <!-- chama modal sobre -->
@@ -211,6 +211,19 @@ body {
             </div>
           </div>
         </div>
+
+        <!-- Cadastrar materia -->
+          <?php
+            # Recebe valor 1 p/ mostrar cadastro de conteudo
+              $opcoesMenu = isset($_GET['novaMateria']) ? $_GET['novaMateria'] : 0;
+
+              if($opcoesMenu == 2){
+                require_once "novaMateria.php";
+              }
+            # FIM Recebe valor 1 p/ mostrar cadastro de conteudo
+            
+          ?>
+        <!-- Cadastrar materia -->
 
         <!-- modal sobre -->
           <div class="modal fade" id="myModal" role="dialog">

@@ -51,7 +51,9 @@
 	<!-- Corpo -->  
 		<div class="container">
 
-			<?php require_once "menu_lateral.php" ?>
+			<!-- Menu lateral -->
+				<?php require_once "menu_lateral.php" ?>
+			<!-- Menu lateral -->
 
 		</div>
 	<!-- Corpo -->  
