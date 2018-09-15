@@ -23,7 +23,7 @@
 				#header('Location: ../view/home/aprovacao/home.php');
 				break;
 			case 'enviar':
-				echo 'enviar';
+				# Estou trabalhando aqui <--
 				break;
 			case 'limpar':
 				echo 'limpar';
