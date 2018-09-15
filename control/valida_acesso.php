@@ -83,9 +83,10 @@
 		$_SESSION['rgm']    = $row['rgm_usu'];
 		$_SESSION['nivel']  = $row['nivel_usu'];
 		$_SESSION['nome']   = $row['nome_usu'];
+		$_SESSION['eMail']  = $row['email_usu'];
 		$_SESSION['sexo']   = $row['sexo'];
-		$_SESSION['foto']    = $row['foto_usu'];
-		$_SESSION['senha'] = $row['senha_usu'];
+		$_SESSION['foto']   = $row['foto_usu'];
+		$_SESSION['senha']  = $row['senha_usu'];
 	} 
 
 	#Compara dados do usuario com o do banco
