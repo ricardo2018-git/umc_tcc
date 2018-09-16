@@ -80,6 +80,7 @@
 	
 	#Pega somente os dados necessarios do select
 	foreach($dados as $key => $row){
+		$_SESSION['id']		= $row['id_usu'];	# Não tinha é novo para amarar a disciplina do prof 
 		$_SESSION['rgm']    = $row['rgm_usu'];
 		$_SESSION['nivel']  = $row['nivel_usu'];
 		$_SESSION['nome']   = $row['nome_usu'];
@@ -96,6 +97,7 @@
 	#Compara credenciais do usuario com o banco
 	if($a == 0 && $b == 0){
 		# Inicia session
+			$_SESSION['id'];					# Não tinha é novo para amarar a disciplina do prof
 			$_SESSION['nome'];
 			$_SESSION['rgm'];
 			$_SESSION['nivel'];

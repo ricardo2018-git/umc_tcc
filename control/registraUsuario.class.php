@@ -26,7 +26,7 @@
 				return $id;
 
 			}catch(Exception $e){
-				throw new Exception("Erro tentar cadastrar Usuario", 1);
+				throw new Exception("Erro tentar buscar id", 1);
 			}
 		}
 
@@ -119,5 +119,37 @@
 		}
 		
 		public function Excluir($id){}
+
+		# Cadastra uma materia no banco
+		public function cadastraMateria($user){
+			try{
+				$conn = new db();			# Cria um obj
+				$PDO = $conn -> Open();		# Abre coneção com o banco
+				
+				# Recebe parametros para o insert
+					$id 		= $user->getId();
+			 		$id_pro 	= $user->getId_pro();
+			 		$disciplina = $user->getDisciplina();
+			 		$assunto 	= $user->getAssunto();
+			 		$titulo 	= $user->getTitulo();
+			 		$conteudo 	= $user->getConteudo();
+			 		$img 		= $user->getImg();
+					$rascunho 	= $user->getRascunho();
+				# FIM Passa parametros para o insert
+
+				#recuperar id do professor
+				#$id_pro = <-- AQUI;
+				
+				# Meu comando sql para inserir materia no bd
+				$sql = "INSERT INTO disciplina(id_dis, id_usu, disciplina_dis, assunto_dis, titulo_dis, Conteudo_dis, img_dis, rascunho_dis)
+							VALUES('".null."', '".$id_pro."', '".$disciplina."', '".$assunto."', '".$titulo."', '".$conteudo."', '".$img."', '".$rascunho."')";
+
+				# Execulta a query
+				$PDO->QUERY($sql);
+
+			}catch(Exception $e){
+				throw new Exception("Erro ao tentar cadastrar Nova Materia", 1);
+			}
+		}
 	}
 ?>

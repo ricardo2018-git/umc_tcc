@@ -1,4 +1,10 @@
 <?php
+	
+	require_once("registraUsuario.class.php");
+	require_once("../model/Disciplina.class.php");
+
+	#Inicia a session
+	session_start();
 
 	# Função que recebe o valor do btnPressionado
 		function get_post_action($name){
@@ -23,7 +29,21 @@
 				#header('Location: ../view/home/aprovacao/home.php');
 				break;
 			case 'enviar':
-				# Estou trabalhando aqui <--
+				# Cadastrar uma materia
+					# Recebe radio selecionado (salvar ou buscar)
+					$rascunho = isset($_POST['ras']) ? $_POST['ras'] : 0;
+					$id_prof  = $_SESSION['id'];
+
+					#Novo objs e passa parametros
+					$novaMateria = new Registra();
+					$novaMateria -> cadastraMateria(new Disciplina(null, $id_prof, $_POST['disciplina'], $_POST['assunto'], $_POST['titulo'], $_POST['conteudo'], $_POST['file'], $rascunho));
+					
+					#configuração p/ mensagem de cadastro efetuado com sucesso.
+					#header('Location: ../');
+
+					# Fecha conexao com bd
+					$u=null;
+				# FIM Cadastrar uma materia
 				break;
 			case 'limpar':
 				echo 'limpar';
