@@ -40,7 +40,7 @@
 	
 	<!-- CSS -->
 		<style>
-			#MeuInput{
+			#MeuInput{ /*botão vizualizar do cadastro de materias*/
 				width: 140px;
      			height: 40px;
 			}
