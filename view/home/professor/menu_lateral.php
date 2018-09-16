@@ -1,3 +1,4 @@
+
 <!-- Opções do menu lateral -->
   <div id="mySidenav" class="sidenav sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -74,7 +75,7 @@
           
             <div id="professor" class="tab-pane fade">
               <h3>PROFESSOR</h3>
-              home fora
+              
             </div>
           
             <div id="administracao" class="tab-pane fade">

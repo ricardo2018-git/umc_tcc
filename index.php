@@ -7,8 +7,7 @@
 			<!-- Logica p/ apresenta mensagem de usuario cadastrado com sucesoo -->
 				<?php
 					$cadastro = isset($_GET['cadastro']) ? $_GET['cadastro'] : 0;
-				?>
-				<?php
+				
 					if($cadastro == 1){		#Usuario cadastrado com sucesso
 	 					echo '<div class="alert alert-success alert-dismissible">
 							  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

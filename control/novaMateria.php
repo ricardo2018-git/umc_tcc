@@ -38,11 +38,12 @@
 					$novaMateria = new Registra();
 					$novaMateria -> cadastraMateria(new Disciplina(null, $id_prof, $_POST['disciplina'], $_POST['assunto'], $_POST['titulo'], $_POST['conteudo'], $_POST['file'], $rascunho));
 					
-					#configuração p/ mensagem de cadastro efetuado com sucesso.
-					#header('Location: ../');
-
 					# Fecha conexao com bd
 					$u=null;
+					
+					#configuração p/ mensagem de cadastro efetuado com sucesso.
+					header('Location: ../view/home/professor/home.php?novaMateria=2&cadastrada=1');
+										
 				# FIM Cadastrar uma materia
 				break;
 			case 'limpar':

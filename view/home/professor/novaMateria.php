@@ -1,3 +1,15 @@
+ <?php
+
+ 	# MSG de materia cadastrada com sucesso!!!
+	$cadastrada = isset($_GET['cadastrada']) ? $_GET['cadastrada'] : 0;
+
+	  if($cadastrada == 1){
+	    echo '<div class="alert alert-success alert-dismissible">
+	        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	        <center><strong> Disciplina, cadastrada com sucesso...</strong></center>
+	        </div>';
+	}
+?>
 
 <div class="row">
 	<div class="col-sm-6">
@@ -23,7 +35,7 @@
 			  </div>
 			  <button type="submit" id="rascunho1"class="btn btn-default" name="rascunho" disabled="disabled">Rascunho</button><br><br>
 			  <button type="submit" class="btn btn-success" name="enviar">Enviar</button>
-			  <button type="submit" class="btn btn-warning" name="limpar">Limpar</button>
+			  <button type="reset" class="btn btn-warning" name="limpar">Limpar</button>
 			  <button type="submit" class="btn btn-info" name="visualizar">Visualizar</button><br><br>
 			</div>	 
 		</form>
