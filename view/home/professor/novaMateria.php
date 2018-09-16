@@ -4,10 +4,11 @@
 	$cadastrada = isset($_GET['cadastrada']) ? $_GET['cadastrada'] : 0;
 
 	  if($cadastrada == 1){
-	    echo '<div class="alert alert-success alert-dismissible">
+	    echo '<br><div class="alert alert-success alert-dismissible">
 	        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 	        <center><strong> Disciplina, cadastrada com sucesso...</strong></center>
 	        </div>';
+	    $cadastrada = 0;
 	}
 ?>
 
@@ -26,19 +27,16 @@
 				<label for="co">* Conteudo:</label>
 					<textarea class="form-control" rows="5" name="conteudo" id="co" required></textarea>
 				<label for="img">Imagem:</label>
-					<input type="file" class="form-control" name="file"><br>
+					<input type="file" class="form-control" name="file">
 				<label for="pro">Professor:</label>
 					<input class="form-control" name="professor" id="pro" type="text" value="<?php echo $_SESSION['eMail'] ?>" disabled>
-			  	<div class="radio">
-				  <label><input type="radio" name="ras" value="salvar" onclick="if(document.getElementById('rascunho1').disabled==true){document.getElementById('rascunho1').disabled=false}">Salvar</label>
-				  <label><input type="radio" name="ras" value="buscar" onclick="if(document.getElementById('rascunho1').disabled==true){document.getElementById('rascunho1').disabled=false}">Buscar</label>
-			  </div>
-			  <button type="submit" id="rascunho1"class="btn btn-default" name="rascunho" disabled="disabled">Rascunho</button><br><br>
+			  	<br>
 			  <button type="submit" class="btn btn-success" name="enviar">Enviar</button>
-			  <button type="reset" class="btn btn-warning" name="limpar">Limpar</button>
-			  <button type="submit" class="btn btn-info" name="visualizar">Visualizar</button><br><br>
+			  <button type="reset" class="btn btn-warning" name="limpar">Limpar</button><br><br>
+			  <button type="submit" id="MeuInput" class="btn btn-info" name="visualizar">Visualizar</button>
 			</div>	 
 		</form>
+		
 	</div>
 
 	<div class="col-sm-6">

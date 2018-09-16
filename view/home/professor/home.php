@@ -40,6 +40,10 @@
 	
 	<!-- CSS -->
 		<style>
+			#MeuInput{
+				width: 140px;
+     			height: 40px;
+			}
 
 			body {
 			    font-family: "Lato", sans-serif;
