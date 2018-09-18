@@ -2,12 +2,12 @@
 <!-- Opções do menu lateral -->
   <div id="mySidenav" class="sidenav sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="home.php?novaMateria=0"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
-    <a href="#" onclick="closeNav()">Perfil</a>
-    <a href="home.php?novaMateria=2" onclick="closeNav()">Nova Materia</a>
-    <a href="#">Visualizar Materia</a>
-    <a href="#" onclick="closeNav()">Notif. de E-mail</a>
-    <a href="#" onclick="closeNav()">FeedBack</a>
+    <a href="home.php?opcoesMenu=0"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
+    <a href="home.php?opcoesMenu=1" onclick="closeNav()">Perfil</a>
+    <a href="home.php?opcoesMenu=2" onclick="closeNav()">Nova Materia</a>
+    <a href="home.php?opcoesMenu=3" onclick="closeNav()">Visualizar Materia</a>
+    <a href="home.php?opcoesMenu=4" onclick="closeNav()">Notif. de E-mail</a>
+    <a href="home.php?opcoesMenu=5" onclick="closeNav()">FeedBack</a>
     <a href="#" onclick="closeNav()" data-toggle="modal" data-target="#myModal">Sobre</a> <!-- chama modal sobre -->
     <a href="../sair.php" onclick="closeNav()">Saír</a>
   </div>
@@ -86,18 +86,33 @@
           </div>
         </div>
 
-        <!-- Cadastrar materia -->
+        <!-- opção do menu PROFESSOR -->
           <?php
-            # Recebe valor 1 p/ mostrar cadastro de conteudo
-              $opcoesMenu = isset($_GET['novaMateria']) ? $_GET['novaMateria'] : 0;
-
-              if($opcoesMenu == 2){
-                require_once "novaMateria.php";
-              }
-            # FIM Recebe valor 1 p/ mostrar cadastro de conteudo
             
+              $opcoesMenu = isset($_GET['opcoesMenu']) ? $_GET['opcoesMenu'] : 0;
+
+              switch ($opcoesMenu){
+              case '1':
+              break;
+
+              case '2':
+                require_once "menu/novaMateria.php";
+              break;
+
+              case '3':
+              break;
+
+              case '4':
+              break;
+
+              case '5':
+              break;
+
+              default:
+              break;
+            }          
           ?>
-        <!-- Cadastrar materia -->
+        <!-- FIM opção do menu PROFESSOR -->
 
         <!-- modal sobre -->
           <div class="modal fade" id="myModal" role="dialog">

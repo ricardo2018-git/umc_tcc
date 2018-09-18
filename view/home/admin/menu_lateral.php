@@ -3,11 +3,11 @@
   <div id="mySidenav" class="sidenav sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
-    <a href="#" onclick="closeNav()">Perfil</a>
-    <a href="#" onclick="closeNav()">Cadastrar Colaborador</a>
-    <a href="#" onclick="closeNav()">Ler FeedBack</a>
-    <a href="#" onclick="closeNav()">Permissões</a>
-    <a href="#" onclick="closeNav()">Validar Conteudo</a>
+    <a href="home.php?opcaoMenu=1" onclick="closeNav()">Perfil</a>
+    <a href="home.php?opcaoMenu=2" onclick="closeNav()">Cad. Usuario</a>
+    <a href="home.php?opcaoMenu=3" onclick="closeNav()">Ler FeedBack</a>
+    <a href="home.php?opcaoMenu=4" onclick="closeNav()">Permissões</a>
+    <a href="home.php?opcaoMenu=5" onclick="closeNav()">Validar Conteudo</a>
     <a href="#" onclick="closeNav()" data-toggle="modal" data-target="#myModal">Sobre</a> <!-- chama modal sobre -->
     <a href="../sair.php" onclick="closeNav()">Saír</a>
   </div>
@@ -89,6 +89,33 @@
             </div>
           </div>
         </div>
+
+        <!-- opção do menu ADM-->
+          <?php
+            $opcaoMenu = isset($_GET['opcaoMenu']) ? $_GET['opcaoMenu'] : 0;
+
+            switch ($opcaoMenu){
+              case '1':
+              break;
+
+              case '2':
+              break;
+
+              case '3':
+              break;
+
+              case '4':
+              break;
+
+              case '5':
+                require_once "menu/validar_disciplina.php";
+              break;
+
+              default:
+              break;
+            }
+          ?>
+        <!-- FIM opção do menu ADM-->
 
         <!-- modal sobre -->
           <div class="modal fade" id="myModal" role="dialog">
