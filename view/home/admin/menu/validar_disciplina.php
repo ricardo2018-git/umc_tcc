@@ -1,6 +1,7 @@
 
 <div id="disciplina" class="list-group">
 	<?php
+		
 		require_once("../../../control/listarDisciplinas.php");
 		require_once("../../../model/getDisciplina.php");
 

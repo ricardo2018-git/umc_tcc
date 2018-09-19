@@ -1,6 +1,7 @@
-<?
-	session_start();
-	require_once("db.class.php");
+<?php
+	
+	require_once("../../../control/db.class.php");
+	require_once("../../../model/getDisciplina.php");
 
 	class BuscaDisciplina{
 
@@ -11,10 +12,11 @@
 				$PDO = $conn->Open();	# Abre conexao com bd
 
 				# O select com inner join 
-				$sql = "SELECT u.nome_usu, d.disciplina_dis, d.assunto_dis, d.titulo_dis, d.conteudo_dis, d.img_dis, d.rascunho_dis 
-							FROM usuario as u 
-								inner join disciplina as d 
-									ORDER BY id_dis DESC";	
+				$sql = "select * 
+							from usuario as u
+								INNER JOIN disciplina as m
+									ON u.id_usu = m.id_usu
+										";	
 
 				$result = $PDO->Query($sql);	# Execulta a query e armazena na variavel.
 

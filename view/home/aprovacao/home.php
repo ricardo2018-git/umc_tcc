@@ -171,7 +171,7 @@
 	<!-- Corpo -->  
 		<div class="container">
 
-			<?php require_once "menu_lateral.php" ?>
+			<?php require_once ("menu_lateral.php") ?>
 
 		</div>
 	<!-- Corpo -->  
@@ -180,4 +180,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- Busca outra PG -->
-<?php require_once "../../roda_pe.php" ?>
+<?php require_once ("../../roda_pe.php") ?>

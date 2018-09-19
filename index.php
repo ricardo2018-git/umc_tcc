@@ -1,5 +1,5 @@
-<?php require_once "view/head.php" ?>
-<?php require_once "view/menu_superior.php" ?>
+<?php require_once ("view/head.php") ?>
+<?php require_once ("view/menu_superior.php") ?>
 	<div container>
 
 		<!-- JavaScript seta nossa URL passando valor 0 e redireciona para index, assim quando atualizar não abre a msg cadastrado com sucesso -->

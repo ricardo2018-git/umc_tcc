@@ -1,5 +1,5 @@
 <!-- Busca outra PG -->
-<?php require_once "head.php" ?>
+<?php require_once ("head.php") ?>
 
 	<!-- Manu superiro -->
 		<nav class="navbar navbar-inverse">
@@ -208,4 +208,4 @@
    <!-- Modal Cadastro -->
 
 <!-- Busca outra PG -->
-<?php require_once "roda_pe.php" ?>
+<?php require_once ("roda_pe.php") ?>

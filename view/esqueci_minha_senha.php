@@ -75,4 +75,4 @@
 	<!-- Script faz o menu superior abrir e fecha com as opções ||| -->
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<?php require_once "../view/roda_pe.php" ?>
+<?php require_once ("../view/roda_pe.php") ?>

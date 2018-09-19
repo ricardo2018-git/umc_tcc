@@ -108,7 +108,7 @@
               break;
 
               case '5':
-                require_once "menu/validar_disciplina.php";
+                require_once ("menu/validar_disciplina.php");
               break;
 
               default:

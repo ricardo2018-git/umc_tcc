@@ -102,7 +102,7 @@ body {
           </ul>
           <div class="tab-content">
             <div id="espera" class="tab-pane fade">
-              <h3>Sala de Espera</h3>
+            <!--  <h3>Sala de Espera</h3>
               home fora
             </div>
             
@@ -119,7 +119,7 @@ body {
             <div id="administracao" class="tab-pane fade">
               <h3>ADIMINISTRAÇÃO</h3>
               home fora
-            </div>
+            </div> -->
           </div>
         </div>
 

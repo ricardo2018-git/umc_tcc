@@ -9,6 +9,6 @@
 	unset($_SESSION['foto']);
 
 	# passar valor get p/ obter msg na index de volte sempre. [pendencia]
-	header('Location: ../../index.php?cadastro=5');
+	header("Location: ../../index.php?cadastro=5");
 
 ?>

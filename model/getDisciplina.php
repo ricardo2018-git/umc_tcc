@@ -1,6 +1,6 @@
 <?php
-
-	class getDisciplina{
+	
+	Class getDisciplina{
 		# Atributos
 			private $nome_usu;
 			private $disciplina;

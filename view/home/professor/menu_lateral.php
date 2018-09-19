@@ -96,7 +96,7 @@
               break;
 
               case '2':
-                require_once "menu/novaMateria.php";
+                require_once ("menu/novaMateria.php");
               break;
 
               case '3':

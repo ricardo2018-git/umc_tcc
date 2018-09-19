@@ -1,5 +1,5 @@
 <?php
-
+	
 	class db{
 
 		#Credenciais p/ acessar o servidor
