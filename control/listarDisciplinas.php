@@ -16,6 +16,7 @@
 							from usuario as u
 								INNER JOIN disciplina as m
 									ON u.id_usu = m.id_usu
+										where staus_dis = 'g';
 										";	
 
 				$result = $PDO->Query($sql);	# Execulta a query e armazena na variavel.
@@ -28,7 +29,8 @@
 						$row["titulo_dis"],
 						$row["conteudo_dis"],
 						$row["img_dis"],
-						$row["rascunho_dis"]
+						$row["staus_dis"],
+						$row["data_dis"]
 					);
 				}
 				return $disciplina;

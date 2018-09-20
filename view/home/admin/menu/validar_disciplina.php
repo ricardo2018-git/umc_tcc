@@ -20,7 +20,7 @@
 			echo '<br>';
 			echo 'Img: '.$row->getImg();
 			echo '<br>';
-			echo 'Rascunho: '.$row->getRascunho();
+			echo 'staus_dis: '.$row->getStaus_dis();
 			echo '<br><br>';
 		}
 	?>

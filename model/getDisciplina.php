@@ -8,17 +8,19 @@
 			private $titulo;
 			private $conteudo;
 			private $img;
-			private $rascunho;
+			private $staus_dis;
+			private $data_dis;
 		# FIM Atributos
 		# Método construtor
-			public function __construct($nome_usu, $disciplina, $assunto, $titulo, $conteudo, $img, $rascunho){
+			public function __construct($nome_usu, $disciplina, $assunto, $titulo, $conteudo, $img, $staus_dis, $data_dis){
 				$this->nome_usu			= $nome_usu;
 				$this->disciplina 		= $disciplina;
 				$this->assunto			= $assunto;
 				$this->titulo			= $titulo;
 				$this->conteudo			= $conteudo;
 				$this->img 				= $img;
-				$this->rascunho			= $rascunho;
+				$this->staus_dis		= $staus_dis;
+				$this->data_dis 		= $data_dis;
 			}
 		# FIM Método construtor
 		# Métodos get
@@ -40,8 +42,11 @@
 			public function getImg(){
 				return $this->img; 
 			}
-			public function getRascunho(){
-				return $this->rascunho; 
+			public function getStaus_dis(){
+				return $this->staus_dis; 
+			}
+			public function getData_dis(){
+				return $this->data_dis; 
 			}
 		# FIM Métodos get
 	}

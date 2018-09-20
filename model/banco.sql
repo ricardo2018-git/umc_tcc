@@ -39,6 +39,6 @@ CREATE TABLE disciplina(
 	titulo_dis		varchar(255) not null,
 	conteudo_dis	varchar(255) not null,
 	img_dis			varchar(255),
-	rascunho_dis	varchar(10)
-	#data_dis	datetime default current_timestamp			/*Inseri data e hora automatico*/
+	staus_dis		varchar(5),							/*g = aguardando aprovação, a = aprovado, r = reprovado*/	
+	data_dis	datetime default current_timestamp		/*Inseri data e hora automatico*/
 );
