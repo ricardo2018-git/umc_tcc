@@ -7,7 +7,7 @@
 
 		$buscar = new BuscaDisciplina();
 
-		echo '<center><h2>Materias pendentes de aprovação !!!<br><br></h2></center>';
+		echo '<center><h2>Materias pendente de aprovação !!!<br><br></h2></center>';
 		echo '<table class="table table-hover">
 				<thead>
 					<tr>

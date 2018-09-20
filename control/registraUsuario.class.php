@@ -167,15 +167,15 @@
 			 		$titulo 	= $user->getTitulo();
 			 		$conteudo 	= $user->getConteudo();
 			 		$img 		= $user->getImg();
-					$rascunho 	= $user->getRascunho();
+					$staus_dis 	= $user->getStaus_dis();
 				# FIM Passa parametros para o insert
 
 				#recuperar id do professor
 				#$id_pro = <-- AQUI;
 				
 				# Meu comando sql para inserir materia no bd
-				$sql = "INSERT INTO disciplina(id_dis, id_usu, disciplina_dis, assunto_dis, titulo_dis, Conteudo_dis, img_dis, rascunho_dis)
-							VALUES('".null."', '".$id_pro."', '".$disciplina."', '".$assunto."', '".$titulo."', '".$conteudo."', '".$img."', '".$rascunho."')";
+				$sql = "INSERT INTO disciplina(id_dis, id_usu, disciplina_dis, assunto_dis, titulo_dis, Conteudo_dis, img_dis, staus_dis)
+							VALUES('".null."', '".$id_pro."', '".$disciplina."', '".$assunto."', '".$titulo."', '".$conteudo."', '".$img."', '".$staus_dis."')";
 
 				# Execulta a query
 				$PDO->QUERY($sql);

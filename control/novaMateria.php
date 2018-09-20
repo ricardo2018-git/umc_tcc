@@ -31,7 +31,7 @@
 			case 'enviar':
 				# Cadastrar uma materia
 					# Recebe radio selecionado (salvar ou buscar)
-					$rascunho = isset($_POST['ras']) ? $_POST['ras'] : 0;
+					$rascunho = 'g';#isset($_POST['ras']) ? $_POST['ras'] : 0;
 					$id_prof  = $_SESSION['id'];
 
 					#Novo objs e passa parametros

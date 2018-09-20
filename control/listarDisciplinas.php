@@ -16,8 +16,8 @@
 							from usuario as u
 								INNER JOIN disciplina as m
 									ON u.id_usu = m.id_usu
-										where staus_dis = 'g';
-										";	
+										where staus_dis = 'g'
+											ORDER BY id_dis DESC;";	
 
 				$result = $PDO->Query($sql);	# Execulta a query e armazena na variavel.
 
