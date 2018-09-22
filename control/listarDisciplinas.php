@@ -23,6 +23,7 @@
 
 				foreach($result as $key => $row){
 					$disciplina[] = new getDisciplina(
+						$row["id_dis"],
 						$row["nome_usu"],
 						$row["disciplina_dis"],
 						$row["assunto_dis"],

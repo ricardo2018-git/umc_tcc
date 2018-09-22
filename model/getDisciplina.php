@@ -2,6 +2,7 @@
 	
 	Class getDisciplina{
 		# Atributos
+			private $id;
 			private $nome_usu;
 			private $disciplina;
 			private $assunto;
@@ -12,7 +13,8 @@
 			private $data_dis;
 		# FIM Atributos
 		# Método construtor
-			public function __construct($nome_usu, $disciplina, $assunto, $titulo, $conteudo, $img, $staus_dis, $data_dis){
+			public function __construct($id, $nome_usu, $disciplina, $assunto, $titulo, $conteudo, $img, $staus_dis, $data_dis){
+				$this->id 				= $id;
 				$this->nome_usu			= $nome_usu;
 				$this->disciplina 		= $disciplina;
 				$this->assunto			= $assunto;
@@ -24,6 +26,9 @@
 			}
 		# FIM Método construtor
 		# Métodos get
+			public function getId(){
+				return $this->id; 
+			}
 			public function getNome_usu(){
 				return $this->nome_usu; 
 			}
