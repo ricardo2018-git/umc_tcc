@@ -1,4 +1,5 @@
 <?php
+	
 	require_once("../../../control/listarDisciplinas.php");
 	require_once("../../../model/getDisciplina.php");
 	$buscar = new BuscaDisciplina();
@@ -20,9 +21,9 @@
 		<tbody>
 				<?php foreach($buscar->listarDisciplina() as $key => $row){ ?>
 			<tr>
-				<td><?php echo $row->getNome_usu() ?></td>
-				<td><?php echo $row->getDisciplina() ?></td>
-				<td><?php echo $row->getData_dis() ?></td>
+				<td><?php echo $row->getNome_usu(); ?></td>
+				<td><?php echo $row->getDisciplina(); ?></td>
+				<td><?php echo $row->getData_dis(); ?></td>
 				<td>
 					<button onclick="window.location.href='../../../control/validarMateria.php?id=<?php echo $row->getId(); ?>';" type="button" class="btn btn-success">Validar</button>
 					<button onclick="window.location.href='home.php?opcaoMenu=6&id=<?php echo $row->getId(); ?>';" type="button" class="btn btn-warning">Visualizar</button>
