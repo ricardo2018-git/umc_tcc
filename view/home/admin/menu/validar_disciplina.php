@@ -25,7 +25,7 @@
 				<td><?php echo $row->getData_dis() ?></td>
 				<td>
 					<button onclick="window.location.href='../../../control/validarMateria.php?id=<?php echo $row->getId(); ?>';" type="button" class="btn btn-success">Validar</button>
-					<button type="button" class="btn btn-warning">Visualizar</button>
+					<button onclick="window.location.href='home.php?opcaoMenu=6&id=<?php echo $row->getId(); ?>';" type="button" class="btn btn-warning">Visualizar</button>
 				</td>
 			<tr>	
 				<?php } ?>

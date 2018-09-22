@@ -111,6 +111,10 @@
                 require_once ("menu/validar_disciplina.php");
               break;
 
+              case '6':
+                require_once ("menu/visualizarDisciplina.php");
+              break;
+
               default:
               break;
             }
