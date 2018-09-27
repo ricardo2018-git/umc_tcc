@@ -5,12 +5,13 @@
 
 	class visualizarDisciplina{
 
-		public function listarDisciplina(){
+		public function listarDisciplina($id ){
 			try{
 				$disciplina = array();	# Onde vai amarzenar as materias
 				$conn = new db();		# Cria obj
 				$PDO = $conn->Open();	# Abre conexao com bd
-				$id = 56;
+				 		# Recebe parametro da materia selecionada
+
 				# O select com inner join 
 				$sql = "select * 
 							from usuario as u

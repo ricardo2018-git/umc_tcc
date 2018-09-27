@@ -3,10 +3,10 @@
   session_start();
 
   # Verifica se a session não existe
-  if(!isset($_SESSION['nome'])){
+#  if(!isset($_SESSION['nome'])){
     #redireciona para index passando get 
-    header('Location: ../../../index.php?cadastro=4');
-  }
+ #   header('Location: ../../../index.php?cadastro=4');
+  #}
 ?>
 
 <!DOCTYPE html>
@@ -191,4 +191,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- Busca outra PG -->
-<?php require_once ("../../roda_pe.php") ?>
+<?php require_once ("../../index/roda_pe.php") ?>

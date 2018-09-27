@@ -7,6 +7,9 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>UMC - Anatomia</title>
 
+		<!-- CSS EXTERNO -->
+		<link rel="stylesheet" type="text/css" href="css/css1.css" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -50,7 +53,10 @@
 	<!-- Corpo -->  
 		<div class="container">
 
-			<?php require_once ("menu_lateral.php") ?>
+			<?php 
+				#require_once ("menu_lateral.php"); 
+
+			?>
 
 		</div>
 	<!-- Corpo -->  

@@ -7,57 +7,71 @@
 	#Permite usar atributos e metodos desta class
 	require_once('../control/db.class.php');
 	require_once('../control/registraUsuario.class.php');
-/*
+
 	$u = new Registra();
 
-
 	$cont = 0;
-	echo $_POST["log_rgm"].'<br>';
-	echo $_POST["log_senha"];
-	echo '<br><br>';
+	$log_rgm =  $_POST["log_rgm"];
+	$log_senha =  $_POST["log_senha"];
+
+	$user = null;
 
 	foreach ($u->Listar() as $key => $obj){
 		if( $log_rgm == $obj->getRgm() && $log_senha == $obj->getSenha()){
+			$user = $obj; #pega o registro do banco e guarda na variavel
 			$cont++;
 			break;
 		}
 	}
-
-	echo $a = $obj->getRgm(); #getRgm
-	echo '<br>';
-	echo $b = $obj->getSenha();
-
-	echo '<br><br>';
-
+	#echo $a = $obj->getRgm(); #getRgm
+	#echo '<br>';
+	#echo $b = $obj->getSenha();
+	#echo '<br><br>';
 	if($cont > 0){
-		echo 'já esta registrado novo';
+		# Pega todos dados do usuario que logou e cria sua sessao
+		$_SESSION["user_a"] = base64_encode(serialize($user));
+
+		echo base64_encode(serialize($user));
+
+		$obj = unserialize(base64_decode($_SESSION["user_a"])); // 
+
+		print_r($obj);
+		echo "NOME " . $obj->getRgm();
+		echo "SeNha " . $obj->getSenha();
+		#echo $nivel = $obj->getNivel();
+		# Direciona para pg correta depende do nivel de acesso do usuario...
+
+		switch($obj->getNivel()){
+			case '0':
+				header('Location: ../view/home/aprovacao/home.php');
+			break;
+			case '1':
+				header('Location: ../view/home/aluno/home.php');
+			break;
+			case '2':
+				header('Location: ../view/home/professor/home.php');
+			break;
+			case '3':
+				header('Location: ../view/home/admin/home.php');
+			break;
+		}
+/*
+		if($_SESSION['nivel'] == 0){	# Aguardando aprovação do ADMINISTRADOR
+			header('Location: ../view/home/aprovacao/home.php');
+		}else if($_SESSION['nivel'] == 1){	# Nivel de Aluno
+			header('Location: ../view/home/aluno/home.php');
+		}else if($_SESSION['nivel'] == 2){	# Nivel de Professor
+			header('Location: ../view/home/professor/home.php');
+		}else if($_SESSION['nivel'] == 3){	# Nivel de Administrador
+			header('Location: ../view/home/admin/home.php');
+		}	*/
 	}else{
-		echo 'não esta registrado novo';
+		header('Location: ../index.php?cadastro=3');
 	}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	#Dados recebido do usuario
-	$rgm = $_POST['log_rgm'];
-	$senha = $_POST['log_senha'];
+	
+	/*#Dados recebido do usuario
+	echo $rgm = $_POST['log_rgm'];
+	echo $senha = $_POST['log_senha'];
 
 	$conn = new db();		#Chama conexao
 	$PDO = $conn->Open();	#Abre a conexao
@@ -116,6 +130,6 @@
 		}
 	}else{
 		header('Location: ../index.php?cadastro=3');
-	}
+	}*/
 
 ?>

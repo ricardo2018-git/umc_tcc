@@ -23,20 +23,25 @@
             <div id="img" class="row">
               <div>
                 <?php
-                  if($_SESSION['foto'] == null){
 
-                    if($_SESSION['sexo'] == 'm'){ # Foto macoluno
+                  $obj = unserialize(base64_decode($_SESSION["user"])); // Descripitografo meu usuario de SESSAO
+
+                  if($obj->getFoto() == null){
+
+                    if($obj->getSexo() == 'm'){ # Foto macoluno
                       echo '<img src="../conf/img/usuario_h.png" class="img-circle" alt="Cinque Terre" width=100px>';
 
-                    }else if($_SESSION['sexo'] == 'f'){ # Foto feminino
+                    }else if($obj->getSexo() == 'f'){ # Foto feminino
                       echo '<img src="../conf/img/usuario_f.png" class="img-circle" alt="Cinque Terre" width=100px>';
 
-                    }else if($_SESSION['sexo'] == 'o'){ # Foto Outros
+                    }else if($obj->getSexo() == 'o'){ # Foto Outros
                       echo '<img src="../conf/img/usuario_h2.png" class="img-circle" alt="Cinque Terre" width=100px>';
                     }
                   }else{
-                    # Pegar foto do banco
-                  }
+                    # Pegar endereco de foto do banco
+                  } 
+
+
                 ?>
                 
               </div>

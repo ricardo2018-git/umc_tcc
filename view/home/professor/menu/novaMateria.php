@@ -16,7 +16,7 @@
 	<div class="col-sm-6">
 	  <h2>Nova Disciplina</h2>
 
-		<form class="form-horizontal" action="../../../control/novaMateria.php" id="form" method="post">
+		<form class="form-horizontal" action="../../../control/CadDisciplina.php" id="form" method="post">
 			<div class="form-group">
 				<label for="di">* Disciplina:</label>
 					<input type="text" name="disciplina" class="form-control" id="di" required>
@@ -29,7 +29,7 @@
 				<label for="img">Imagem:</label>
 					<input type="file" class="form-control" name="file">
 				<label for="pro">Professor:</label>
-					<input class="form-control" name="professor" id="pro" type="text" value="<?php echo $_SESSION['eMail'] ?>" disabled>
+					<input class="form-control" name="professor" id="pro" type="text" value="<? ?>" disabled>
 			  	<br>
 			  <button type="submit" class="btn btn-success" name="enviar">Enviar</button>
 			  <button type="reset" class="btn btn-warning" name="limpar">Limpar</button><br><br>

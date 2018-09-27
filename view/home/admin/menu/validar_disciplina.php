@@ -1,8 +1,6 @@
 <?php
-	
-	require_once("../../../control/listarDisciplinas.php");
-	require_once("../../../model/getDisciplina.php");
-	$buscar = new BuscaDisciplina();
+	require_once("../../../control/CrudDisciplina.php");
+	$buscar = new CrudDisciplina();
 ?>
 <div id="disciplina" class="list-group">
 	<center><h2>Materias pendente de aprovacao !!!<br><br></h2></center>
@@ -19,7 +17,7 @@
 			<tr>
 		</thead>
 		<tbody>
-				<?php foreach($buscar->listarDisciplina() as $key => $row){ ?>
+				<?php foreach($buscar->listar() as $key => $row){ ?>
 			<tr>
 				<td><?php echo $row->getNome_usu(); ?></td>
 				<td><?php echo $row->getDisciplina(); ?></td>

@@ -22,6 +22,7 @@
             <div id="img" class="row">
               <div>
                 <?php
+
                   if($_SESSION['foto'] == null){
 
                     if($_SESSION['sexo'] == 'm'){ # Foto macoluno
@@ -34,8 +35,8 @@
                       echo '<img src="../conf/img/usuario_h2.png" class="img-circle" alt="Cinque Terre" width=100px>';
                     }
                   }else{
-                    # Pegar foto do banco
-                  }
+                    # Pegar endereco de foto do banco
+                  } 
                 ?>
                 
               </div>

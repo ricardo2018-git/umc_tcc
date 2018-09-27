@@ -1,7 +1,8 @@
 <?php
 
 	require_once("../control/db.class.php");		#Referencia a classe de conexao
-	require_once("../model/Usuario.class.php");		#Referencia a classe usuario
+	require_once("../model/Dados.class.php");		#Referencia a classe Dados
+	require_once("../model/Usuario.class.php");		#Referencia a classe Dados
 
 	class Registra{
 
@@ -98,9 +99,9 @@
 				$conn = new db();
 				$PDO = $conn->Open();
 
-				$sql = "SELECT * FROM usuario";
+				$sql = "SELECT * FROM usuario";	
 
-				$result = $PDO->Query($sql);
+				$result = $PDO->Query($sql);				
 
 				foreach($result as $key => $row){
 					$dados[] = new Usuario(
@@ -120,36 +121,37 @@
 			}
 		}
 		
-/*		function listarDisciplina(){
+
+		public function ListarDados(){
 			try{
-				$conn = new db();			# Cria obj
-				$PDO = $conn->Open();	# Abre conexao com bd
-				$disciplina = array();	# Onde vai amarzenar as materias
+				$dados = array();
+				$conn = new db();
+				$PDO = $conn->Open();
 
-				# O select com inner join 
-				$sql = "SELECT u.nome_usu, d.disciplina_dis, d.assunto_dis, d.titulo_dis, d.conteudo_dis, d.img_dis, d.rascunho_dis
-							FROM usuario as u
-								inner join disciplina as d
-									ORDER BY id_dis DESC";	
+				$sql = "SELECT * FROM endereco";	
 
-				$result = $PDO->Query($sql);	# Execulta a query e armazena na variavel.
+				$result = $PDO->Query($sql);				
 
 				foreach($result as $key => $row){
-					$disciplina[] new getDisciplina(
-						$row["nome_usu"],
-						$row["disciplina_dis"],
-						$row["assunto_dis"],
-						$row["titulo_dis"],
-						$row["conteudo_dis"],
-						$row["img_dis"],
-						$row["rascunho_dis"]
+					$dados[] = new Dados(
+						$row["id_end"],
+						$row["id_usu"],
+						$row["endereco"],
+						$row["complemento"],
+						$row["cep"],
+						$row["cidade"],
+						$row["estado"],
+						$row["telefone"],
+						$row["cpf"],
+						$row["sexo"],
+						$row["nascionalidade"]
 					);
 				}
-				return $disciplina;
+				return $dados;
 			}catch(Exception $e){
-				throw new Exception("Erro ao buscar disciplinas", 1);
+				throw new Exception("Erro ao processar Request", 1);
 			}
-		}	*/
+		}
 
 		public function Excluir($id){}
 
