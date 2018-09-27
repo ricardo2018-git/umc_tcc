@@ -40,8 +40,7 @@
                   }else{
                     # Pegar endereco de foto do banco
                   } 
-
-
+                  
                 ?>
                 
               </div>
