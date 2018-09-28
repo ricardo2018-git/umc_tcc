@@ -1,6 +1,7 @@
 <?php
 	require_once("Conexao.php");
-	require_once("../../../model/Disciplina.php");
+	require_once("../model/Disciplina.php"); # esta assim antes ../../../model/Disciplina.php
+
 
 	Class CrudDisciplina{
 
@@ -14,13 +15,13 @@
 				# Pega parametros da class Disciplina
 				$id_dis 	= $user->getId_dis();
 				$id_usu 	= $user->getId_usu();
-				$disciplina = $user->getDisciplina_dis();
-				$titulo 	= $user->getTitulo_dis();
-				$assunto 	= $user->getAssunto_dis();
-				$conteudo 	= $user->getConteudo_dis();
-				$img 		= $user->getImg_dis();
+				$disciplina = $user->getDisciplina();
+				$titulo 	= $user->getTitulo();
+				$assunto 	= $user->getAssunto();
+				$conteudo 	= $user->getConteudo();
+				$img 		= $user->getImg();
 				$status 	= 'p';
-				$data 		= $user->getData_dis();
+				$data 		= $user->getData();
 
 				# Query SQL
 				$sql = "INSERT INTO disciplina(id_dis, id_usu, disciplina_dis, titulo_dis, assunto_dis, conteudo_dis, img_dis, status_dis) 

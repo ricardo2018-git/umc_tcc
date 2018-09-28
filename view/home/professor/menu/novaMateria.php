@@ -1,5 +1,6 @@
  <?php
-
+ 	#session_start();
+	#echo $obj = unserialize(base64_decode($_SESSION['user']));
  	# MSG de materia cadastrada com sucesso!!!
 	$cadastrada = isset($_GET['cadastrada']) ? $_GET['cadastrada'] : 0;
 
@@ -10,6 +11,7 @@
 	        </div>';
 	    $cadastrada = 0;
 	}
+	
 ?>
 
 <div class="row">
@@ -29,14 +31,14 @@
 				<label for="img">Imagem:</label>
 					<input type="file" class="form-control" name="file">
 				<label for="pro">Professor:</label>
-					<input class="form-control" name="professor" id="pro" type="text" value="<? ?>" disabled>
+					<input class="form-control" name="professor" id="pro" type="text" value="<?php echo $_SESSION['user'] ?>" disabled>
 			  	<br>
 			  <button type="submit" class="btn btn-success" name="enviar">Enviar</button>
 			  <button type="reset" class="btn btn-warning" name="limpar">Limpar</button><br><br>
 			  <button type="submit" id="MeuInput" class="btn btn-info" name="visualizar">Visualizar</button>
 			</div>	 
 		</form>
-		
+			
 	</div>
 
 	<div class="col-sm-6">
