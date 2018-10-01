@@ -1,10 +1,11 @@
 <?php 
   # Inicia session
   session_start();
+  
   #require_once("../../../control/Conexao.php");
   require_once("../../../model/Usuario.php");
   #require_once("../../../control/CrudUsuario.php");
-
+ 
   # Verifica se a session não existe
  #if(!isset($_SESSION['rgm'])){
     #redireciona para index passando get 

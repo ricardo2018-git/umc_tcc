@@ -62,7 +62,34 @@
 		}
 
 		# Alterar
-		
+		public function Alterar($user){
+			try{
+				$obj = unserialize(base64_decode($_SESSION["user"]));	# Recupera Session Usuario
+				$id = $obj->getId();	# Recupera o id
+				$conn = new Conexao();	# Cria um Obj
+				$PDO = $conn->Open();	# Abre conexao
+
+				# Pega parametros da class Usuario
+				$id		= $user->getId();
+				$rgm	= $user->getRgm();
+				$nivel	= $user->getNivel();
+				$nome	= $user->getNome();
+				$email	= $user->getEmail();
+				$senha	= $user->getSenha();
+				$foto	= $user->getFoto();
+				$sexo	= $user->getSexo();
+				$data	= $user->getData();
+
+				# Query SQL
+				$sql = "UPDATE usuario SET rgm_usu = '".$rgm."', nome_usu = '".$nome."', email_usu = '".$email."', senha_usu = '".$senha."', foto_usu = '".null."', sexo_usu = '".$sexo."' WHERE id_usu = '".$id."'";
+							
+				# Executa a query
+				$PDO->Query($sql);
+			}catch(Exception $e){
+				throw new Exception("Erro ao tentar cadastrar Usuario", 1);
+			}
+		}
+
 		# Listar
 		public function Listar(){
 			try{

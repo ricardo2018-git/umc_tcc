@@ -38,22 +38,22 @@
 		# Listar
 		public function Listar(){
 			try{
-				$dados = array();		# Cria um Array
-				$conn = new Conexao();	# Cria Obj
-				$PDO = $conn->Open();	# Abre conexao
+				$dados = array();					# Cria um Array
+				$conn = new Conexao();				# Cria Obj
+				$PDO = $conn->Open();				# Abre conexao
 				$sql = "SELECT * FROM disciplina";	# Query
-				$result = $PDO->Query($sql);	# Executa query
+				$result = $PDO->Query($sql);		# Executa query
 				foreach($result as $key => $row){
 					$dados[] = new Disciplina(
 						$row['id_dis'],
 						$row['id_usu'],
-						$row['disciplina'],
-						$row['titulo'],
-						$row['assunto'],
-						$row['conteudo'],
-						$row['img'],
-						$row['status'],
-						$row['data']
+						$row['disciplina_dis'],
+						$row['titulo_dis'],
+						$row['assunto_dis'],
+						$row['conteudo_dis'],
+						$row['img_dis'],
+						$row['status_dis'],
+						$row['data_dis']
 					);
 				}
 				return $dados;	# Retorna os dados da query

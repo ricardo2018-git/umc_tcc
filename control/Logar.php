@@ -1,6 +1,5 @@
 <?php session_start();	# Inicia uma sessão
 
-	#require_once('Conexao.php');
 	require_once('CrudUsuario.php');
 
 	$usuario = new CrudUsuario();	# Cria um Obj
@@ -22,7 +21,6 @@
 
 	# Verifica se ele pode logar
 	if($cont > 0){
-		
 		
 		$_SESSION["user"] = base64_encode(serialize($user));
 

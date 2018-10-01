@@ -97,6 +97,7 @@
 
               switch ($opcoesMenu){
               case '1':
+                require_once ("../perfil.php");
               break;
 
               case '2':

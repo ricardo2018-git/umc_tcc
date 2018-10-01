@@ -101,6 +101,34 @@
           </div>
         </div>
 
+        <!-- opção do menu APROVAÇAO -->
+          <?php
+            
+              $opcoesMenu = isset($_GET['opcoesMenu']) ? $_GET['opcoesMenu'] : 0;
+
+              switch ($opcoesMenu){
+              case '1':
+                require_once ("../perfil.php");
+              break;
+
+              case '2':
+              break;
+
+              case '3':
+              break;
+
+              case '4':
+              break;
+
+              case '5':
+              break;
+
+              default:
+              break;
+            }          
+          ?>
+        <!-- FIM opção do menu APROVAÇAO -->
+
         <!-- modal sobre -->
           <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">

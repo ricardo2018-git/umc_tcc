@@ -3,10 +3,10 @@
   <div id="mySidenav" class="sidenav sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#"><i class="fa fa-fw fa-home"></i>Inicio</a><hr> <!-- Linha -->
-    <a href="#" onclick="closeNav()">Perfil</a>
-    <a href="#" onclick="closeNav()">Pesquisar</a>
-    <a href="#" onclick="closeNav()">Enviar E-mail</a>
-    <a href="#" onclick="closeNav()">FeedBack</a>
+    <a href="home.php?opcoesMenu=1" onclick="closeNav()">Perfil</a>
+    <a href="home.php?opcoesMenu=2" onclick="closeNav()">Pesquisar</a>
+    <a href="home.php?opcoesMenu=3" onclick="closeNav()">Enviar E-mail</a>
+    <a href="home.php?opcoesMenu=4" onclick="closeNav()">FeedBack</a>
     <a href="#" onclick="closeNav()" data-toggle="modal" data-target="#myModal">Sobre</a> <!-- chama modal sobre -->
     <a href="../sair.php" onclick="closeNav()">Saír</a>
   </div>
@@ -88,6 +88,34 @@
             </div>
           </div>
         </div>
+
+        <!-- opção do menu ALUNO -->
+          <?php
+            
+              $opcoesMenu = isset($_GET['opcoesMenu']) ? $_GET['opcoesMenu'] : 0;
+
+              switch ($opcoesMenu){
+              case '1':
+                require_once ("../perfil.php");
+              break;
+
+              case '2':
+              break;
+
+              case '3':
+              break;
+
+              case '4':
+              break;
+
+              case '5':
+              break;
+
+              default:
+              break;
+            }          
+          ?>
+        <!-- FIM opção do menu ALUNO -->
 
         <!-- modal sobre -->
           <div class="modal fade" id="myModal" role="dialog">
