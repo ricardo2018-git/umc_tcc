@@ -56,5 +56,35 @@
 				return $this->data;
 			}
 		#FIM Métodos Get's
+
+		# Métodos Set's
+			public function setId_dis($x){
+				$this->id_dis = $x;
+			}
+			public function setId_usu($x){
+				$this->id_usu = $x;
+			}
+			public function setDisciplina($x){
+				$this->disciplina = $x;
+			}
+			public function setTitulo($x){
+				$this->titulo = $x;
+			}
+			public function setAssunto($x){
+				$this->assunto = $x;
+			}
+			public function setConteudo($x){
+				$this->conteudo = $x;
+			}
+			public function setImg($x){
+				$this->img = $x;
+			}
+			public function setStatus($x){
+				$this->status = $x;
+			}
+			public function setData($x){
+				$this->data = $x;
+			}
+		#FIM Métodos Set's
 	}
 ?>
