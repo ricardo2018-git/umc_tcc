@@ -15,17 +15,19 @@
 	
 ?>
 <div>
+	<!-- JavaScript seta nossa URL passando valor 0 e redireciona para index, assim quando atualizar não abre a msg cadastrado com sucesso -->
+	<div onclick="window.location.href='home.php?opcaoMenu=1';">
+		<?php $sucesso = isset($_GET['sucesso']) ? $_GET['sucesso'] : null; 	# Mensagem alteracao
+			switch ($sucesso){
+				case '1':
+					echo '<br><div class="alert alert-success alert-dismissible">
+						  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+							<center><strong> Usuario alterado com sucesso...</strong></center>
+						  </div>';
+			}
+		?>
+	</div>
 	<h3><center>Edite seu Perfil</center></h3><br>
-	
-	<?php $sucesso = isset($_GET['sucesso']) ? $_GET['sucesso'] : null; 	# Mensagem alteracao
-		switch ($sucesso){
-			case '1':
-				echo '<div class="alert alert-success alert-dismissible">
-					  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-						<center><strong> Usuario alterado com sucesso...</strong></center>
-					  </div>';
-		}
-	?>
 
 	<form method="POST" action="../../../control/UpdatePerfil.php">
 		 
